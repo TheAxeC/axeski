@@ -1,0 +1,74 @@
+
+<program>
+	<events>
+		<event type="A"></event>
+		<event type="B">
+			<member type="number" name="cool" />			
+		</event>
+	</events>
+	<classes>
+		<class name="Matthijs">
+			<events>
+				<inputEvent type="&lt;Start&gt;"></inputEvent>
+			</events>
+			<emits>
+				<outputEvent type="A"></outputEvent>
+			</emits>
+			<handlers>
+				<handler name="handller" event="&lt;Start&gt;">
+					<block>
+						<print>
+							<value>From class Matthijs</value>
+						</print>
+						<emit name="A"/>
+					</block>
+				</handler>
+			</handlers>
+		</class>
+		<class name="Axel">
+			<events>
+				<inputEvent type="&lt;Start&gt;"></inputEvent>
+				<inputEvent type="A"></inputEvent>
+				<inputEvent type="B"></inputEvent>
+			</events>
+			<emits>
+				<outputEvent type="B"></outputEvent>
+			</emits>
+			<handlers>
+				<handler name="handller" event="&lt;Start&gt;">
+				</handler>
+				<handler name="handller" event="A">
+					<block>
+						<makeVar name="a" type="number"/>
+						<setVar name="a">
+							<value>5</value>
+						</setVar>
+						<print>
+							<value>From class Axel</value>
+						</print>
+						<emit name="B">
+							<var name="a"/>
+						</emit>
+					</block>
+				</handler>
+				<handler name="handller" event="B">
+					<block>
+						<print>
+							<access name="cool"/>
+						</print>
+					</block>
+				</handler>
+			</handlers>
+		</class>
+	</classes>
+	<wireframe>
+		<instances>
+			<instance x="0" y="0" class="Axel" name="a"></instance>
+			<instance x="0" y="0" class="Matthijs" name="m"></instance>
+		</instances>
+		<wires>
+			<wire event="A" from="m" to="a"/>
+			<wire event="B" from="a" to="a"/>
+		</wires>
+		</wireframe>
+	</program>

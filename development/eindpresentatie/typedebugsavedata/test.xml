@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<program>
+    <events>
+        <event type="event1">
+            <member name="member1" type="NUMBER"/>
+        </event>
+    </events>
+    <classes>
+        <class name="Test">
+            <events>
+                <inputEvent type="event1"/>
+                <inputEvent type="&lt;Start&gt;"/>
+            </events>
+            <emits/>
+            <memberVariables/>
+            <handlers>
+                <handler event="event1" name="" x="31.0" y="245.0">
+                    <block x="23.0" y="32.0">
+                        <makeVar name="test" type="NUMBER" x="0.0" y="0.0"/>
+                        <setVar name="test" x="0.0" y="58.0">
+                            <access name="member1" x="140.0" y="10.0"/>
+                        </setVar>
+                    </block>
+                </handler>
+            </handlers>
+            <functions>
+                <function name="function1" x="403.0" y="56.0">
+                    <return type="BOOLEAN"/>
+                    <params>
+                        <param name="par1" type="NUMBER"/>
+                    </params>
+                    <block x="20.0" y="40.0">
+                        <makeVar name="bool" type="BOOLEAN" x="0.0" y="0.0"/>
+                        <setVar name="bool" x="0.0" y="58.0">
+                            <value x="140.0" y="10.0">true</value>
+                        </setVar>
+                        <return x="0.0" y="116.0">
+                            <var name="bool" x="60.0" y="10.0"/>
+                        </return>
+                    </block>
+                </function>
+            </functions>
+            <floatingBlocks/>
+            <costumes/>
+        </class>
+    </classes>
+    <wireframe>
+        <instances>
+            <instance class="Test" name="tester1" x="294.0" y="105.0"/>
+        </instances>
+        <wires/>
+    </wireframe>
+</program>

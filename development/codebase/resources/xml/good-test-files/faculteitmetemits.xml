@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<program>
+    <events>
+        <event type="fac">
+            <member name="i" type="NUMBER"/>
+            <member name="current" type="NUMBER"/>
+        </event>
+    </events>
+    <classes>
+        <class name="Faculteit">
+            <events>
+                <inputEvent type="&lt;Start&gt;"/>
+                <inputEvent type="fac"/>
+            </events>
+            <emits>
+                <outputEvent type="fac"/>
+            </emits>
+            <memberVariables/>
+            <handlers>
+                <handler event="fac" name="" x="226.0" y="637.0">
+                    <block x="23.0" y="32.0">
+                        <makeVar name="i" type="NUMBER" x="0.0" y="0.0"/>
+                        <makeVar name="cur" type="NUMBER" x="0.0" y="58.0"/>
+                        <setVar name="i" x="0.0" y="116.0">
+                            <access name="i" x="140.0" y="10.0"/>
+                        </setVar>
+                        <setVar name="cur" x="0.0" y="174.0">
+                            <access name="current" x="140.0" y="10.0"/>
+                        </setVar>
+                        <FunctionCall name="faculteit" x="0.0" y="232.0">
+                            <params>
+                                <var name="cur" x="100.0" y="10.0"/>
+                                <var name="i" x="180.0" y="10.0"/>
+                            </params>
+                            <returns>
+                                <NULL/>
+                            </returns>
+                        </FunctionCall>
+                    </block>
+                </handler>
+                <handler event="&lt;Start&gt;" name="" x="190.0" y="167.0">
+                    <block x="23.0" y="32.0">
+                        <makeVar name="fac" type="NUMBER" x="0.0" y="0.0"/>
+                        <makeVar name="cur" type="NUMBER" x="0.0" y="58.0"/>
+                        <setVar name="cur" x="0.0" y="116.0">
+                            <value x="140.0" y="10.0">1</value>
+                        </setVar>
+                        <setVar name="fac" x="0.0" y="174.0">
+                            <value x="140.0" y="10.0">100</value>
+                        </setVar>
+                        <FunctionCall name="faculteit" x="0.0" y="232.0">
+                            <params>
+                                <var name="cur" x="100.0" y="10.0"/>
+                                <var name="fac" x="180.0" y="10.0"/>
+                            </params>
+                            <returns>
+                                <NULL/>
+                            </returns>
+                        </FunctionCall>
+                    </block>
+                </handler>
+            </handlers>
+            <functions>
+                <function name="faculteit" x="750.0" y="298.0">
+                    <return type="NUMBER"/>
+                    <params>
+                        <param name="cur" type="NUMBER"/>
+                        <param name="i" type="NUMBER"/>
+                    </params>
+                    <block x="20.0" y="40.0">
+                        <makeVar name="ret" type="NUMBER" x="0.0" y="0.0"/>
+                        <setVar name="ret" x="0.0" y="58.0">
+                            <value x="140.0" y="10.0">1</value>
+                        </setVar>
+                        <if x="0.0" y="116.0">
+                            <cond>
+                                <operator op="&lt;" x="50.0" y="10.0">
+                                    <var name="i" x="80.0" y="10.0"/>
+                                    <value x="210.0" y="10.0">1</value>
+                                </operator>
+                            </cond>
+                            <block x="23.0" y="78.0">
+                                <print x="0.0" y="0.0">
+                                    <var name="cur" x="50.0" y="10.0"/>
+                                </print>
+                                <return x="0.0" y="53.0"/>
+                            </block>
+                        </if>
+                        <setVar name="cur" x="0.0" y="340.0">
+                            <operator op="*" x="140.0" y="10.0">
+                                <var name="cur" x="80.0" y="10.0"/>
+                                <var name="i" x="210.0" y="10.0"/>
+                            </operator>
+                        </setVar>
+                        <setVar name="i" x="0.0" y="413.0">
+                            <operator op="-" x="140.0" y="10.0">
+                                <var name="i" x="80.0" y="10.0"/>
+                                <value x="210.0" y="10.0">1</value>
+                            </operator>
+                        </setVar>
+                        <emit name="fac" x="0.0" y="491.0">
+                            <var member="current" name="cur"/>
+                            <var member="i" name="i"/>
+                        </emit>
+                    </block>
+                </function>
+            </functions>
+            <floatingBlocks/>
+            <costumes/>
+        </class>
+    </classes>
+    <wireframe>
+        <instances>
+            <instance class="Faculteit" name="fac2" x="893.0" y="299.0"/>
+            <instance class="Faculteit" name="tt" x="201.0" y="222.0"/>
+        </instances>
+        <wires>
+            <wire event="fac" from="fac2" to="tt"/>
+            <wire event="fac" from="tt" to="fac2"/>
+        </wires>
+    </wireframe>
+</program>

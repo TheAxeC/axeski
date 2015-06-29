@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<program>
+    <events/>
+    <classes>
+        <class name="Faculteit">
+            <events>
+                <inputEvent type="&lt;Start&gt;"/>
+            </events>
+            <emits/>
+            <memberVariables/>
+            <handlers>
+                <handler event="&lt;Start&gt;" name="" x="81.0" y="196.0">
+                    <block x="23.0" y="32.0">
+                        <makeVar name="fac" type="NUMBER" x="0.0" y="0.0"/>
+                        <setVar name="fac" x="0.0" y="58.0">
+                            <value x="140.0" y="10.0">100</value>
+                        </setVar>
+                        <FunctionCall name="faculteit" x="0.0" y="116.0">
+                            <params>
+                                <var name="fac" x="100.0" y="10.0"/>
+                            </params>
+                            <returns>
+                                <var name="fac" x="210.0" y="10.0"/>
+                            </returns>
+                        </FunctionCall>
+                        <print x="0.0" y="169.0">
+                            <var name="fac" x="50.0" y="10.0"/>
+                        </print>
+                    </block>
+                </handler>
+            </handlers>
+            <functions>
+                <function name="faculteit" x="413.0" y="19.0">
+                    <return type="NUMBER"/>
+                    <params>
+                        <param name="par" type="NUMBER"/>
+                    </params>
+                    <block x="20.0" y="40.0">
+                        <makeVar name="ret" type="NUMBER" x="0.0" y="0.0"/>
+                        <setVar name="ret" x="0.0" y="58.0">
+                            <value x="140.0" y="10.0">1</value>
+                        </setVar>
+                        <if x="0.0" y="116.0">
+                            <cond>
+                                <operator op="&lt;" x="50.0" y="10.0">
+                                    <var name="par" x="80.0" y="10.0"/>
+                                    <value x="210.0" y="10.0">1</value>
+                                </operator>
+                            </cond>
+                            <block x="23.0" y="78.0">
+                                <return x="0.0" y="0.0">
+                                    <var name="ret" x="60.0" y="10.0"/>
+                                </return>
+                            </block>
+                        </if>
+                        <setVar name="ret" x="0.0" y="287.0">
+                            <operator op="-" x="140.0" y="10.0">
+                                <var name="par" x="80.0" y="10.0"/>
+                                <value x="210.0" y="10.0">1</value>
+                            </operator>
+                        </setVar>
+                        <FunctionCall name="faculteit" x="0.0" y="365.0">
+                            <params>
+                                <var name="ret" x="100.0" y="10.0"/>
+                            </params>
+                            <returns>
+                                <var name="ret" x="210.0" y="10.0"/>
+                            </returns>
+                        </FunctionCall>
+                        <setVar name="ret" x="0.0" y="418.0">
+                            <operator op="*" x="140.0" y="10.0">
+                                <var name="ret" x="80.0" y="10.0"/>
+                                <var name="par" x="210.0" y="10.0"/>
+                            </operator>
+                        </setVar>
+                        <return x="0.0" y="491.0">
+                            <var name="ret" x="60.0" y="10.0"/>
+                        </return>
+                    </block>
+                </function>
+            </functions>
+            <floatingBlocks/>
+            <costumes/>
+        </class>
+    </classes>
+    <wireframe>
+        <instances>
+            <instance class="Faculteit" name="fac1" x="187.0" y="177.0"/>
+            <instance class="Faculteit" name="fac2" x="512.0" y="175.0"/>
+        </instances>
+        <wires/>
+    </wireframe>
+</program>

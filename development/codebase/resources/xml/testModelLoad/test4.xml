@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<program>
+    <events/>
+    <classes>
+        <class name="tt">
+            <events>
+                <inputEvent type="&lt;Start&gt;"/>
+            </events>
+            <emits/>
+            <handlers>
+                <handler event="&lt;Start&gt;" name="" x="301.0" y="152.0">
+                    <block x="20.0" y="30.0">
+                        <makeVar name="tst" type="STRING" x="0.0" y="0.0"/>
+                        <setVar name="tst" x="0.0" y="55.0">
+                            <value>test</value>
+                        </setVar>
+                        <print x="0.0" y="110.0">
+                            <var name="tst"/>
+                        </print>
+                    </block>
+                </handler>
+            </handlers>
+            <functions/>
+            <memberVariables/>
+        </class>
+    </classes>
+    <wireframe>
+        <instances>
+            <instance class="tt" name="test" x="0.0" y="0.0"/>
+        </instances>
+        <wires/>
+    </wireframe>
+</program>

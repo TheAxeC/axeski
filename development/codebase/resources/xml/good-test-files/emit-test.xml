@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<program>
+    <events>
+        <event type="dd">
+            <member name="fff" type="NUMBER"/>
+        </event>
+    </events>
+    <classes>
+        <class name="fdfdf">
+            <events>
+                <inputEvent type="&lt;Start&gt;"/>
+                <inputEvent type="dd"/>
+            </events>
+            <emits>
+                <outputEvent type="dd"/>
+            </emits>
+            <memberVariables/>
+            <handlers>
+                <handler event="dd" name="" x="127.0" y="401.0">
+                    <block x="20.0" y="30.0">
+                        <print x="0.0" y="0.0">
+                            <access name="fff" x="50.0" y="10.0"/>
+                        </print>
+                    </block>
+                </handler>
+                <handler event="&lt;Start&gt;" name="" x="314.0" y="35.0">
+                    <block x="20.0" y="30.0">
+                        <makeVar name="axel" type="NUMBER" x="0.0" y="0.0"/>
+                        <setVar name="axel" x="0.0" y="55.0">
+                            <length x="140.0" y="10.0">
+                                <value x="50.0" y="10.0">axel</value>
+                            </length>
+                        </setVar>
+                        <emit name="dd" x="0.0" y="130.0">
+                            <var member="fff" name="axel"/>
+                        </emit>
+                    </block>
+                </handler>
+            </handlers>
+            <functions/>
+            <floatingBlocks/>
+            <costumes/>
+        </class>
+    </classes>
+    <wireframe>
+        <instances>
+            <instance class="fdfdf" name="tt" x="179.0" y="159.0"/>
+        </instances>
+        <wires>
+            <wire event="dd" from="tt" to="tt"/>
+        </wires>
+    </wireframe>
+</program>

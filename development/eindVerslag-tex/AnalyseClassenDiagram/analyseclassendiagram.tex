@@ -1,0 +1,89 @@
+\documentclass[]{article}
+ 
+\begin{document}
+\section{Blocks}
+\label{bijlageblok}
+Deze bijlage bespreekt de verschillende ge\"implementeerde blokken. De implementatiedetails komen kort aan bod.
+\subsubsection{De Interface Block}
+Een Block stelt een klasse voor die een bepaald stuk code voorstelt. Deze bevat een execute functie die een proces meekrijgt zodat hij zijn code kan uitvoeren of plaaten op het proces.
+
+\subsection{Functies en Handlers}
+\subsubsection{HandlerBlock}
+Deze implementeert de interface Block. Deze bevat een \texttt{ArrayList<Block>} \cite{arraylist} die we de body noemen. De heeft een EventInstance die hij mee kreeg op oproep, via een setter. Deze wordt mee op zijn variabele stack gepushed bij het aanmaken van zijn FunctionFrame. De execute van deze block pushed de body als individuele blokken op de stack van het proces dat hij meekrijgt. Achteraan de body plakt hij nog een PopBlock.
+\subsubsection{PopBlock}
+Deze implementeert de interface Block. De execute van deze Block popt het bovenste FunctionFrame van de stack van het proces.
+\subsubsection{FunctionBlock}
+Deze implementeert de interface Block. Deze bevat een \texttt{ArrayList<Block>} \cite{arraylist} die we de body noemen. De excute functie van deze Block zet de body op Stack van Blocks van het proces dat deze meekrijgt. Onder deze body plakt hij nog PopBlock. De Block bevat twee \texttt{ArrayList<VariableBlock>} \cite{arraylist} voor respectievelijke parameters en return parameters.
+\subsubsection{FunctionCallBlock}
+Deze bevat een String voor de functie naam. En twee \texttt{ArrayList<String>} \cite{arraylist} voor respectievelijk de parameters en return waardes van de Call.\\ De execute van deze Block zal de variabele van de waarde parameters ophalen uit het huidige bovenste FunctieFrame van de Stack van het proces. Deze slaat hij tijdelijk lokaal op. Hierna haalt hij de namen van de parameters van de functie op. Hij maakt een nieuwe FunctieFrame hierop pushed hij alle parametersnamen met de eerder opgehaalde variabelen. Hierna pushed hij op Stack de SetBlocken voor de return waardes. Uiteindelijk roept hij de execute van de functie aan zodat deze bovenaan de stack staat. Dit telt als een primitieve stap.
+\subsubsection{ReturnBlock}
+Deze block bevat een \texttt{ArrayList} \cite{arraylist} van Strings die de namen van de variables voorstellen die gereturned moeten worden. Deze zal hij ophalen in het huidige FunctieFrame en opslaan in de ReturnVariables van het proces. Een ReturnBlock popt alle blokken van de Stack tot hij een PopBock tegenkomt.
+\subsubsection{PrintBlock}
+Deze bevat een Block die geexecute wordt en de waarde van de variable wordt uitgeprint.
+
+\subsection{Events en emits}
+\subsubsection{AccessBlock}
+ Deze bevat twee Strings namelijk de naam van het EventInstance waarvan het een member wil opvragen. En de naam van die member. De execute functie zal dus het EventInstance van de FunctionFrame opvragen. Hierin vraagt hij de variable op van de member en deze geeft hij terug.
+\subsubsection{EmitBlock}
+Bevat een naam van het Event. En een Hashmap \cite{hashmap} van Strings die de members van het event voorstellen deze worden gemapt op Blocks. De execute van dit Block zal deze Blocks uitvoeren en de bekomen variabele kopieren en mappen op de juiste string. Het zal dan een aangemaakte event terug geven aan het proces. Dat dit op zijn beurt doorgeeft aan de VM.
+
+\subsection{String blocks}
+\subsubsection{ConcatBlock}
+De execute van deze block geeft een variable terug die de string concatinatie van de een left- en rightBlock is. Deze Blocken kunnen dieper genest zijn maar hun execute geeft een variable terug.
+\subsubsection{StrlenBlock}
+Deze block geeft een variable terug die de lengte van de String bevat. Het bevat een Block die op zijn execute een Stringvariable terug geeft.
+\subsubsection{CharAtBlock} 
+Deze block geeft een variable terug waarvan de inhoud het character op een gegeven index van een gegeven string is. De String wordt meegeven als een block en deze geeft dus een variabele terug. De block die de string bevat kan dus genest zijn. Als die index niet gevonden is, dan wordt er een OutOfBoundsException gegooid.
+
+\subsection{Operation blocks}
+\subsubsection{ArithBlock}
+Deze block bevat een left block en een right block. Als deze twee worden geexecute op de teruggeven variable wordt de juiste operatie uitgevoerd de bekomen variabele wordt terug gegeven. De block bevat ook een statische hashmap zoals beschreven in sectie \ref{lambda} om de juiste operatie uit te kunnen voeren.
+De uitvoering zal dus in een primitieve stap gebeuren.
+\subsubsection{LogicBlock}
+De execute van deze block geeft een variable terug. Deze block bevat een left block en een right block. Als deze twee worden geexecute op de teruggeven variable wordt de juiste operatie uitgevoerd de bekomen variabele wordt terug gegeven.
+De uitvoering zal dus in een primitieve stap gebeuren. De block bevat ook een statische hashmap zoals beschreven in sectie \ref{lambda} om de juiste operatie uit te kunnen voeren.
+\subsubsection{Random}
+De execute van deze block geeft een random value tussen een lower- en upperBound terug in een Variabele. De lower- en upperBound kunnen weer blokken zijn die worden execute en een variabele teruggeven.
+
+\subsection{Locks}
+\subsubsection{LockBlock}
+Deze block lockt een bepaalde membervariabele van de instance waarbij het huidige proces hoort.
+\subsubsection{UnlockBlock}
+Deze block unlockt een bepaalde membervariabele van de instance waarbij het huidige proces hoort.
+
+\subsection{Conditionele blocks}
+\subsubsection{IfBlock}
+Deze block bevat een Block conditie en een \texttt{ArrayList<Block>} \cite{arraylist} die de body van de If voorstelt. De execute van de block kijkt als de conditie naar true evalueert door deze te laten execute en de waarde van de variable na te kijken. Zo ja dan wordt de body van de If op de stack van het proces gepushed anders zal de block aflopen..
+\subsubsection{WhileBlock}
+Deze bevat een Block conditie en een \texttt{ArrayList<Block>} \cite{arraylist} die we body noemen. De execute van de block kijkt als de conditie naar true evalueert door deze te laten execute en de waarde van de variable na te kijken. Zo ja dan wordt de body plus zichzelf op de stack van het proces gepushed.
+\subsubsection{IfElseBlock}
+Deze block bevat een Block conditie en twee \texttt{ArrayList<Block>} \cite{arraylist} die respecitievelijk de body van de If en else voorstellen. De execute van de block kijkt als de conditie naar true evalueert door deze te laten execute en de waarde van de variable na te kijken. Zo ja dan wordt de body van de If  op de stack van het proces gepushed anders de body van de Else.
+
+\subsection{Physics}
+\subsubsection{ShowBlock}
+Voert een functie van de instance uit om te tonen of te hiden.
+\subsubsection{ChangeAppereanceBlock}
+De bevat een Block index, deze kan een arith expression zijn. Dus we laten hem execute zodat we de index krijgen in een variable. Dit zal de execute van de blok doen plus het oproepen van de functie bij een instance die de appereance veranderd.
+\subsubsection{MoveBlock}
+Deze bevat een x- en een y-Block. De execute van de MoveBlock zal de waarde van x en y bekomen door deze Blocks te execute. De waardes geeft hij mee aan een functie van de instance die zijn x en y verhoogt met die waardes.
+
+\subsection{Variables}
+\subsubsection{VariableBlock}
+Deze Block bevat een String en een Type. De execute van deze block zal deze variable aanmaken en op het huidige FunctionFrame zetten.
+\subsection{ValueBlock}
+ValueBlock maakt een nieuwe literal variabele aan en geeft deze terug.
+\subsubsection{GetVarBlock}
+De GetVarBlock kent de naam van een variabele en vraagt deze variabele op aan het proces. Deze variabele kan lokaal zijn of een member variabele. De membervariabele kan geshadowed worden door een lokale variabele.
+\subsubsection{SetBlock}
+Deze bevat een String die de naam is van een variabele op de huidige FunctionFrame. Deze block bevat nog een andere block, dat ofwel een variable, value of operatie aanduid. De execute van eender van deze blocken geeft steeds de inhoud (variable) terug aan de SetBlock. Deze blok telt als een primitieve stap.
+\subsubsection{SetReturnBlock}
+Deze blok zal de return waardes van een functie in het functieframe zetten waarin de functie aanroep gebeurt is.
+
+\subsection{Debug}
+\subsubsection{DebugBlock}
+De DebugBlock kent het model waarvan hij gecompileerd is. Indien er gedebugged moet worden zal de blok het model laten weten dat de debug modus aan of uit moet. De blok kan ook een breakException gooien die de uitvoer stil legt na het aflopen van een cycle.
+
+\subsection{Other}
+\subsubsection{SleepBlock}
+De sleep block kent het aantal cycles die geslaapt moeten worden. Deze block zal zichzelf plaatsen op de uit te voeren stack van blocks. Deze nieuwe block zal een cycle minder lang moeten slapen. Uiteindelijk als de counter nul bereikt, wordt de sleep block verwijderd.
+\end{document}

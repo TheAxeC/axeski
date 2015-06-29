@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<program>
+    <events>
+        <event type="Eat">
+            <member name="eat" type="BOOLEAN"/>
+            <member name="person" type="STRING"/>
+        </event>
+        <event type="A">
+            <member name="name" type="STRING"/>
+        </event>
+        <event type="B">
+            <member name="name" type="STRING"/>
+        </event>
+        <event type="C">
+            <member name="name" type="STRING"/>
+        </event>
+        <event type="D">
+            <member name="name" type="STRING"/>
+        </event>
+        <event type="E">
+            <member name="name" type="STRING"/>
+        </event>
+    </events>
+    <classes>
+        <class name="Philosopher">
+            <events>
+                <inputEvent type="&lt;Start&gt;"/>
+            </events>
+            <emits>
+                <outputEvent type="A"/>
+                <outputEvent type="B"/>
+                <outputEvent type="D"/>
+                <outputEvent type="E"/>
+                <outputEvent type="C"/>
+                <outputEvent type="Eat"/>
+            </emits>
+            <memberVariables>
+                <member name="food2" type="NUMBER"/>
+                <member name="food" type="NUMBER"/>
+            </memberVariables>
+            <handlers>
+                <handler event="&lt;Start&gt;" name="" x="21.0" y="392.0">
+                    <block x="23.0" y="32.0">
+                        <makeVar name="per" type="STRING" x="0.0" y="0.0"/>
+                        <setVar name="per" x="0.0" y="58.0">
+                            <value x="140.0" y="10.0">persoon 2</value>
+                        </setVar>
+                        <emit name="B" x="0.0" y="116.0">
+                            <var member="name" name="per"/>
+                        </emit>
+                        <FunctionCall name="problem" x="0.0" y="204.0">
+                            <params>
+                                <var name="per" x="100.0" y="10.0"/>
+                            </params>
+                            <returns/>
+                        </FunctionCall>
+                    </block>
+                </handler>
+                <handler event="&lt;Start&gt;" name="" x="403.0" y="601.0">
+                    <block x="23.0" y="32.0">
+                        <makeVar name="per" type="STRING" x="0.0" y="0.0"/>
+                        <setVar name="per" x="0.0" y="58.0">
+                            <value x="140.0" y="10.0">persoon 3</value>
+                        </setVar>
+                        <emit name="C" x="0.0" y="116.0">
+                            <var member="name" name="per"/>
+                        </emit>
+                        <FunctionCall name="problem" x="0.0" y="204.0">
+                            <params>
+                                <var name="per" x="100.0" y="10.0"/>
+                            </params>
+                            <returns/>
+                        </FunctionCall>
+                    </block>
+                </handler>
+                <handler event="&lt;Start&gt;" name="" x="213.0" y="-51.0">
+                    <block x="23.0" y="32.0">
+                        <makeVar name="per" type="STRING" x="0.0" y="0.0"/>
+                        <setVar name="per" x="0.0" y="58.0">
+                            <value x="140.0" y="10.0">persoon 4</value>
+                        </setVar>
+                        <emit name="D" x="0.0" y="116.0">
+                            <var member="name" name="per"/>
+                        </emit>
+                        <FunctionCall name="problem" x="0.0" y="204.0">
+                            <params>
+                                <var name="per" x="100.0" y="10.0"/>
+                            </params>
+                            <returns/>
+                        </FunctionCall>
+                    </block>
+                </handler>
+                <handler event="&lt;Start&gt;" name="" x="933.0" y="-66.0">
+                    <block x="23.0" y="32.0">
+                        <makeVar name="per" type="STRING" x="0.0" y="0.0"/>
+                        <setVar name="per" x="0.0" y="58.0">
+                            <value x="140.0" y="10.0">persoon 1</value>
+                        </setVar>
+                        <emit name="A" x="0.0" y="116.0">
+                            <var member="name" name="per"/>
+                        </emit>
+                        <FunctionCall name="problem" x="0.0" y="204.0">
+                            <params>
+                                <var name="per" x="100.0" y="10.0"/>
+                            </params>
+                            <returns/>
+                        </FunctionCall>
+                    </block>
+                </handler>
+                <handler event="&lt;Start&gt;" name="" x="547.0" y="-171.0">
+                    <block x="23.0" y="32.0">
+                        <makeVar name="per" type="STRING" x="0.0" y="0.0"/>
+                        <setVar name="per" x="0.0" y="58.0">
+                            <value x="140.0" y="10.0">persoon 5</value>
+                        </setVar>
+                        <emit name="E" x="0.0" y="116.0">
+                            <var member="name" name="per"/>
+                        </emit>
+                        <FunctionCall name="problem" x="0.0" y="204.0">
+                            <params>
+                                <var name="per" x="100.0" y="10.0"/>
+                            </params>
+                            <returns/>
+                        </FunctionCall>
+                    </block>
+                </handler>
+            </handlers>
+            <functions>
+                <function name="problem" x="894.0" y="341.0">
+                    <params>
+                        <param name="name" type="STRING"/>
+                    </params>
+                    <block x="20.0" y="40.0">
+                        <makeVar name="eat" type="BOOLEAN" x="0.0" y="0.0"/>
+                        <forever x="0.0" y="58.0">
+                            <block x="23.0" y="23.0">
+                                <lock name="food" x="0.0" y="0.0"/>
+                                <lock name="food2" x="0.0" y="53.0"/>
+                                <print x="0.0" y="106.0">
+                                    <var name="name" x="50.0" y="10.0"/>
+                                </print>
+                                <setVar name="eat" x="0.0" y="159.0">
+                                    <value x="140.0" y="10.0">true</value>
+                                </setVar>
+                                <emit name="Eat" x="0.0" y="217.0">
+                                    <var member="person" name="name"/>
+                                    <var member="eat" name="eat"/>
+                                </emit>
+                                <sleep x="0.0" y="355.0">
+                                    <value x="50.0" y="10.0">1000</value>
+                                </sleep>
+                                <setVar name="eat" x="0.0" y="413.0">
+                                    <value x="140.0" y="10.0">false</value>
+                                </setVar>
+                                <emit name="Eat" x="0.0" y="471.0">
+                                    <var member="person" name="name"/>
+                                    <var member="eat" name="eat"/>
+                                </emit>
+                                <unlock name="food" x="0.0" y="609.0"/>
+                                <unlock name="food2" x="0.0" y="662.0"/>
+                            </block>
+                        </forever>
+                    </block>
+                </function>
+            </functions>
+            <floatingBlocks/>
+            <costumes>
+                <costume name="table" path="table_Philosopher"/>
+            </costumes>
+        </class>
+        <class name="Person">
+            <events>
+                <inputEvent type="Eat"/>
+                <inputEvent type="A"/>
+                <inputEvent type="B"/>
+                <inputEvent type="C"/>
+                <inputEvent type="D"/>
+                <inputEvent type="E"/>
+            </events>
+            <emits/>
+            <memberVariables>
+                <member name="person" type="STRING"/>
+            </memberVariables>
+            <handlers>
+                <handler event="A" name="" x="357.0" y="-125.0">
+                    <block x="23.0" y="32.0">
+                        <setVar name="person" x="0.0" y="0.0">
+                            <access name="name" x="140.0" y="10.0"/>
+                        </setVar>
+                    </block>
+                </handler>
+                <handler event="B" name="" x="-104.0" y="-115.0">
+                    <block x="23.0" y="32.0">
+                        <setVar name="person" x="0.0" y="0.0">
+                            <access name="name" x="140.0" y="10.0"/>
+                        </setVar>
+                    </block>
+                </handler>
+                <handler event="D" name="" x="-279.0" y="332.0">
+                    <block x="23.0" y="32.0">
+                        <setVar name="person" x="0.0" y="0.0">
+                            <access name="name" x="140.0" y="10.0"/>
+                        </setVar>
+                    </block>
+                </handler>
+                <handler event="E" name="" x="44.0" y="455.0">
+                    <block x="23.0" y="32.0">
+                        <setVar name="person" x="0.0" y="0.0">
+                            <access name="name" x="140.0" y="10.0"/>
+                        </setVar>
+                    </block>
+                </handler>
+                <handler event="C" name="" x="-315.0" y="66.0">
+                    <block x="23.0" y="32.0">
+                        <setVar name="person" x="0.0" y="0.0">
+                            <access name="name" x="140.0" y="10.0"/>
+                        </setVar>
+                    </block>
+                </handler>
+                <handler event="Eat" name="" x="412.0" y="69.0">
+                    <block x="23.0" y="32.0">
+                        <if x="0.0" y="0.0">
+                            <cond>
+                                <operator op="==" x="50.0" y="10.0">
+                                    <access name="person" x="80.0" y="10.0"/>
+                                    <var name="person"/>
+                                </operator>
+                            </cond>
+                            <block x="23.0" y="73.0">
+                                <if-else x="0.0" y="0.0">
+                                    <cond>
+                                        <access name="eat" x="50.0" y="20.0"/>
+                                    </cond>
+                                    <block x="23.0" y="68.0">
+                                        <appear x="0.0" y="0.0">
+                                            <value x="100.0" y="10.0">eat</value>
+                                        </appear>
+                                    </block>
+                                    <block x="23.0" y="169.0">
+                                        <appear x="0.0" y="0.0">
+                                            <var name="person"/>
+                                        </appear>
+                                    </block>
+                                </if-else>
+                            </block>
+                        </if>
+                    </block>
+                </handler>
+            </handlers>
+            <functions/>
+            <floatingBlocks/>
+            <costumes>
+                <costume name="persoon 3" path="persoon 3_Person"/>
+                <costume name="persoon 2" path="persoon 2_Person"/>
+                <costume name="persoon 1" path="persoon 1_Person"/>
+                <costume name="default" path="default_Person"/>
+                <costume name="persoon 5" path="persoon 5_Person"/>
+                <costume name="persoon 4" path="persoon 4_Person"/>
+                <costume name="eat" path="eat_Person"/>
+            </costumes>
+        </class>
+    </classes>
+    <wireframe>
+        <instances>
+            <instance class="Philosopher" name="table" x="416.0" y="127.0"/>
+            <instance class="Person" name="person1" x="114.0" y="308.0"/>
+            <instance class="Person" name="person2" x="628.0" y="-84.0"/>
+            <instance class="Person" name="person3" x="806.0" y="272.0"/>
+            <instance class="Person" name="person4" x="436.0" y="532.0"/>
+            <instance class="Person" name="person5" x="195.0" y="-82.0"/>
+        </instances>
+        <wires>
+            <wire event="A" from="table" to="person1"/>
+            <wire event="B" from="table" to="person2"/>
+            <wire event="C" from="table" to="person3"/>
+            <wire event="Eat" from="table" to="person3"/>
+            <wire event="Eat" from="table" to="person2"/>
+            <wire event="Eat" from="table" to="person1"/>
+            <wire event="Eat" from="table" to="person5"/>
+            <wire event="E" from="table" to="person5"/>
+            <wire event="Eat" from="table" to="person4"/>
+            <wire event="D" from="table" to="person4"/>
+        </wires>
+    </wireframe>
+</program>

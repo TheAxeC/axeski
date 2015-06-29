@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<program>
+    <events/>
+    <classes>
+        <class name="tt">
+            <events>
+                <inputEvent type="&lt;Start&gt;"/>
+            </events>
+            <emits/>
+            <memberVariables/>
+            <handlers>
+                <handler event="&lt;Start&gt;" name="" x="266.0" y="79.0">
+                    <block x="20.0" y="30.0">
+                        <makeVar name="x" type="BOOLEAN" x="0.0" y="0.0"/>
+                        <setVar name="x" x="0.0" y="55.0">
+                            <value x="140.0" y="10.0">0</value>
+                        </setVar>
+                        <if x="0.0" y="110.0">
+                            <cond>
+                                <operator op="!" x="50.0" y="10.0">
+                                    <var name="x" x="70.0" y="10.0"/>
+                                    <dummy/>
+                                </operator>
+                            </cond>
+                            <block x="23.0" y="73.0">
+                                <print x="0.0" y="0.0">
+                                    <value x="50.0" y="10.0">ok</value>
+                                </print>
+                            </block>
+                        </if>
+                        <print x="0.0" y="275.0">
+                            <value x="50.0" y="10.0">huh?</value>
+                        </print>
+                    </block>
+                </handler>
+            </handlers>
+            <functions/>
+            <floatingBlocks/>
+            <costumes/>
+        </class>
+    </classes>
+    <wireframe>
+        <instances>
+            <instance class="tt" name="cd" x="224.0" y="147.0"/>
+        </instances>
+        <wires/>
+    </wireframe>
+</program>

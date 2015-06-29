@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<program>
+    <events/>
+    <classes>
+        <class name="rrr">
+            <events>
+                <inputEvent type="&lt;Start&gt;"/>
+            </events>
+            <emits/>
+            <memberVariables>
+                <member name="axel" type="NUMBER"/>
+            </memberVariables>
+            <handlers>
+                <handler event="&lt;Start&gt;" name="" x="162.0" y="191.0">
+                    <block x="20.0" y="30.0">
+                        <print x="0.0" y="0.0">
+                            <value x="50.0" y="10.0">wait</value>
+                        </print>
+                        <lock name="axel" x="0.0" y="55.0"/>
+                        <print x="0.0" y="105.0">
+                            <value x="50.0" y="10.0">after lock</value>
+                        </print>
+                        <unlock name="axel" x="0.0" y="160.0"/>
+                    </block>
+                </handler>
+                <handler event="&lt;Start&gt;" name="" x="431.0" y="94.0">
+                    <block x="20.0" y="30.0">
+                        <lock name="axel" x="0.0" y="0.0"/>
+                        <print x="0.0" y="50.0">
+                            <value x="50.0" y="10.0">in lock</value>
+                        </print>
+                        <print x="0.0" y="105.0">
+                            <value x="50.0" y="10.0">in lock</value>
+                        </print>
+                        <print x="0.0" y="160.0">
+                            <value x="50.0" y="10.0">in lock</value>
+                        </print>
+                        <unlock name="axel" x="0.0" y="215.0"/>
+                    </block>
+                </handler>
+            </handlers>
+            <functions/>
+            <floatingBlocks/>
+            <costumes/>
+        </class>
+    </classes>
+    <wireframe>
+        <instances>
+            <instance class="rrr" name="vvv" x="245.0" y="145.0"/>
+        </instances>
+        <wires/>
+    </wireframe>
+</program>

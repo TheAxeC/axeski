@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<program>
+    <events/>
+    <classes>
+        <class name="alarm">
+            <events>
+                <inputEvent type="&lt;Start&gt;"/>
+                <inputEvent type="&lt;keyA&gt;"/>
+            </events>
+            <emits/>
+            <memberVariables>
+                <member name="notAlarm" type="NUMBER"/>
+                <member name="cnt" type="NUMBER"/>
+            </memberVariables>
+            <handlers>
+                <handler event="&lt;keyA&gt;" name="" x="59.0" y="351.0">
+                    <block x="23.0" y="32.0">
+                        <setVar name="cnt" x="0.0" y="0.0">
+                            <value x="140.0" y="10.0">0</value>
+                        </setVar>
+                        <appear x="0.0" y="58.0">
+                            <value x="100.0" y="10.0">green</value>
+                        </appear>
+                    </block>
+                </handler>
+                <handler event="&lt;Start&gt;" name="" x="382.0" y="-53.0">
+                    <block x="23.0" y="32.0">
+                        <forever x="0.0" y="0.0">
+                            <block x="23.0" y="23.0">
+                                <if x="0.0" y="0.0">
+                                    <cond>
+                                        <operator op="&gt;" x="50.0" y="10.0">
+                                            <var name="cnt"/>
+                                            <value x="210.0" y="10.0">1000</value>
+                                        </operator>
+                                    </cond>
+                                    <block x="23.0" y="78.0">
+                                        <appear x="0.0" y="0.0">
+                                            <value x="100.0" y="10.0">red</value>
+                                        </appear>
+                                    </block>
+                                </if>
+                                <sleep x="0.0" y="176.0">
+                                    <value x="50.0" y="10.0">100</value>
+                                </sleep>
+                                <setVar name="cnt" x="0.0" y="234.0">
+                                    <operator op="+" x="140.0" y="10.0">
+                                        <var name="cnt"/>
+                                        <value x="210.0" y="10.0">100</value>
+                                    </operator>
+                                </setVar>
+                            </block>
+                        </forever>
+                    </block>
+                </handler>
+            </handlers>
+            <functions/>
+            <floatingBlocks/>
+            <costumes>
+                <costume name="red" path="red_alarm"/>
+                <costume name="green" path="green_alarm"/>
+            </costumes>
+        </class>
+    </classes>
+    <wireframe>
+        <instances>
+            <instance class="alarm" name="alarm" x="219.0" y="180.0"/>
+        </instances>
+        <wires/>
+    </wireframe>
+</program>

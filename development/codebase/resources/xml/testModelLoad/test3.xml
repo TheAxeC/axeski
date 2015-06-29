@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<program>
+    <events/>
+    <classes>
+        <class name="dfdf">
+            <events>
+                <inputEvent type="&lt;Start&gt;"/>
+            </events>
+            <emits/>
+            <handlers>
+                <handler event="&lt;Start&gt;" name="" x="548.0" y="282.0">
+                    <block x="20.0" y="30.0">
+                        <print x="0.0" y="0.0">
+                            <value>test</value>
+                        </print>
+                    </block>
+                </handler>
+            </handlers>
+            <functions/>
+            <memberVariables/>
+        </class>
+    </classes>
+    <wireframe>
+        <instances>
+            <instance class="dfdf" name="test" x="0.0" y="0.0"/>
+        </instances>
+        <wires/>
+    </wireframe>
+</program>

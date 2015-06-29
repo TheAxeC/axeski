@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<program>
+    <events>
+        <event type="switchLight"/>
+    </events>
+    <classes>
+        <class name="lightSwitcher">
+            <events>
+                <inputEvent type="&lt;Start&gt;"/>
+                <inputEvent type="switchLight"/>
+            </events>
+            <emits/>
+            <memberVariables>
+                <member name="lightOn" type="BOOLEAN"/>
+            </memberVariables>
+            <handlers>
+                <handler event="&lt;Start&gt;" name="constructor" x="26.0" y="192.0">
+                    <block x="23.0" y="32.0">
+                        <setVar name="lightOn" x="0.0" y="0.0">
+                            <value x="140.0" y="10.0">false</value>
+                        </setVar>
+                    </block>
+                </handler>
+                <handler event="switchLight" name="switchLight" x="341.0" y="12.0">
+                    <block x="23.0" y="32.0">
+                        <FunctionCall name="switchLight" x="0.0" y="0.0">
+                            <params/>
+                            <returns/>
+                        </FunctionCall>
+                    </block>
+                </handler>
+            </handlers>
+            <functions>
+                <function name="switchLight" x="372.0" y="166.0">
+                    <params/>
+                    <block x="20.0" y="40.0">
+                        <if-else x="0.0" y="0.0">
+                            <cond>
+                                <var name="lightOn"/>
+                            </cond>
+                            <block x="23.0" y="63.0">
+                                <appear x="0.0" y="0.0">
+                                    <value x="100.0" y="10.0">lightOff</value>
+                                </appear>
+                            </block>
+                            <block x="23.0" y="164.0">
+                                <appear x="0.0" y="0.0">
+                                    <value x="100.0" y="10.0">lightOn</value>
+                                </appear>
+                            </block>
+                        </if-else>
+                        <setVar name="lightOn" x="0.0" y="269.0">
+                            <operator op="!" x="140.0" y="10.0">
+                                <var name="lightOn"/>
+                                <dummy/>
+                            </operator>
+                        </setVar>
+                    </block>
+                </function>
+            </functions>
+            <floatingBlocks/>
+            <costumes>
+                <costume name="lightOff" path="lightOff_lightSwitcher"/>
+                <costume name="lightOn" path="lightOn_lightSwitcher"/>
+            </costumes>
+        </class>
+        <class name="Controller">
+            <events/>
+            <emits/>
+            <memberVariables/>
+            <handlers/>
+            <functions/>
+            <floatingBlocks/>
+            <costumes>
+                <costume name="redbutton" path="redbutton_Controller"/>
+            </costumes>
+        </class>
+    </classes>
+    <wireframe>
+        <instances>
+            <instance class="lightSwitcher" name="Light1" x="182.0" y="104.0"/>
+            <instance class="lightSwitcher" name="Light2" x="447.0" y="101.0"/>
+            <instance class="Controller" name="Switch" x="66.0" y="379.0"/>
+            <instance class="lightSwitcher" name="Light3" x="723.0" y="104.0"/>
+        </instances>
+        <wires/>
+    </wireframe>
+</program>

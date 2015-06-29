@@ -1,0 +1,2860 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.8" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true">  
+  <class id="1" language="java" name="ide.backend.runtime.InterpreterRuntime" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/runtime/InterpreterRuntime.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="755" y="688"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="ide.backend.runtime.EventCatcher" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/runtime/EventCatcher.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="607" y="801"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="ide.backend.runtime.Runtime" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/runtime/Runtime.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="756" y="802"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="ide.frontend.main.CanvasView.MyDispatcher" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/main/CanvasView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="511" y="630"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="ide.frontend.main.CanvasView" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/main/CanvasView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="276" y="625"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="ide.frontend.canvas.SpriteView" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/canvas/SpriteView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="275" y="721"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="ide.backend.model.classes.InstanceModel" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/model/classes/InstanceModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="427" y="802"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="ide.backend.runtime.ModelCollection" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/runtime/ModelCollection.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="799" y="1224"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="ide.backend.model.classes.WireFrameModel" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/model/classes/WireFrameModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="429" y="1076"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="ide.backend.runtime.InterpreterCompiler" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/runtime/InterpreterCompiler.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="973" y="909"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="11" language="java" name="ide.backend.runtime.Compiler" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/runtime/Compiler.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="972" y="799"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="12" language="java" name="ide.backend.core.EventDispatcher" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/core/EventDispatcher.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1303" y="365"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="ide.backend.core.Instance" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/core/Instance.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1398" y="111"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="ide.backend.core.VirtualMachine" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/core/VirtualMachine.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1291" y="476"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="ide.backend.core.Event" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/core/Event.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="51" width="86" x="1009" y="293"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="ide.backend.core.Proces" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/core/Proces.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1291" y="633"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="ide.backend.core.FunctionFrame" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/core/FunctionFrame.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1499" y="659"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="ide.backend.core.ClassContainer" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/core/ClassContainer.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1063" y="120"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="ide.backend.collections.ClassPool" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/collections/ClassPool.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="781" y="118"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="ide.backend.collections.WiredInstance" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/collections/WiredInstance.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1427" y="265"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="ide.backend.collections.WireFrame" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/collections/WireFrame.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="765" y="270"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="ide.backend.collections.EventPool" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/collections/EventPool.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="764" y="360"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="ide.backend.runtime.InterpreterRuntime.RuntimeData" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/runtime/InterpreterRuntime.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="766" y="475"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="24" language="java" name="ide.backend.blocks.Block" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/blocks/Block.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1293" y="781"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="25" language="java" name="ide.backend.blocks.functionsAndHandlers.PrintBlock" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/blocks/functionsAndHandlers/PrintBlock.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1294" y="933"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="26" language="java" name="ide.backend.variables.Variable" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/variables/Variable.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1499" y="925"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="27" language="java" name="ide.backend.variables.EventInstance" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/variables/EventInstance.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1025" y="593"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="28" language="java" name="ide.backend.load.XMLDataLoader" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/load/XMLDataLoader.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1090" y="1200"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="29" language="java" name="ide.backend.load.DataLoader" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/load/DataLoader.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1098" y="1088"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="30" language="java" name="ide.backend.save.DataSaver" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/save/DataSaver.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1089" y="1271"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="31" language="java" name="ide.backend.save.XMLDataSaver" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/save/XMLDataSaver.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1091" y="1356"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="32" language="java" name="ide.frontend.wire.WireCreationModel" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/wire/WireCreationModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="424" y="1220"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="33" language="java" name="ide.frontend.wire.WireCreationController" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/wire/WireCreationController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="208" y="1222"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="34" language="java" name="ide.frontend.wire.WireCreationView" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/wire/WireCreationView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="13" y="1223"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="35" language="java" name="ide.frontend.wire.WirePanel" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/wire/WirePanel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="8" y="984"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="36" language="java" name="ide.frontend.wire.InstanceView" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/wire/InstanceView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="227" y="934"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="37" language="java" name="ide.frontend.wire.SelectInstancePanel" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/wire/SelectInstancePanel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="200" y="1078"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="38" language="java" name="ide.frontend.wire.EventFilterPanel" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/wire/EventFilterPanel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="-129" y="1069"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="39" language="java" name="ide.backend.model.classes.WireModel" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/model/classes/WireModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="631" y="955"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="40" language="java" name="ide.frontend.events.EventCreationModel" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/events/EventCreationModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="431" y="1330"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="41" language="java" name="ide.frontend.events.EventCreationController" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/events/EventCreationController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="213" y="1336"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="42" language="java" name="ide.frontend.events.EventCreationView" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/events/EventCreationView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="22" y="1334"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="43" language="java" name="ide.frontend.events.EventView" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/events/EventView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="19" y="1426"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="44" language="java" name="ide.frontend.models.VariableView" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/models/VariableView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="19" y="1522"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="45" language="java" name="ide.frontend.events.EventController" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/events/EventController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="212" y="1425"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="46" language="java" name="ide.backend.model.event.EventModel" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/model/event/EventModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="429" y="1425"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="47" language="java" name="ide.backend.model.variables.VariableModel" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/model/variables/VariableModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="424" y="1528"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="48" language="java" name="ide.frontend.models.VariableController" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/models/VariableController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="217" y="1526"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="49" language="java" name="ide.frontend.classes.ClassCreationModel" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/classes/ClassCreationModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="433" y="1647"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="50" language="java" name="ide.frontend.classes.ClassCreationController" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/classes/ClassCreationController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="214" y="1648"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="51" language="java" name="ide.frontend.classes.ClassCreationView" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/classes/ClassCreationView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="16" y="1647"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="52" language="java" name="ide.frontend.classes.ClassView" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/classes/ClassView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="19" y="1774"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="53" language="java" name="ide.frontend.classes.MemberVariablesView" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/classes/MemberVariablesView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="-172" y="1772"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="54" language="java" name="ide.frontend.classes.IDEPanelData" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/classes/IDEPanelData.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="383" y="1859"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="55" language="java" name="ide.frontend.classes.IDEPanel" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/classes/IDEPanel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="254" y="1772"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="56" language="java" name="ide.frontend.classes.ClassInputEventsView" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/classes/ClassInputEventsView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="578" y="1767"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="57" language="java" name="ide.frontend.classes.SelectBlocksPanel" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/classes/SelectBlocksPanel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="27" y="1900"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="58" language="java" name="ide.frontend.classes.ClassCostumeView" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/classes/ClassCostumeView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="-186" y="1902"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="59" language="java" name="ide.backend.model.classes.ClassModel" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/model/classes/ClassModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="802" y="2004"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="60" language="java" name="ide.frontend.classes.ClassModelController" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/classes/ClassModelController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="70" y="2026"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="61" language="java" name="ide.frontend.main.AxeSki" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/main/AxeSki.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="-768" y="1360"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="62" language="java" name="ide.frontend.main.FrameIDE" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/main/FrameIDE.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="-414" y="1288"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="63" language="java" name="ide.frontend.main.FrameModel" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/main/FrameModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="-413" y="1536"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="64" language="java" name="ide.frontend.main.DataEditor" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/main/DataEditor.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="-548" y="1063"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="65" language="java" name="ide.frontend.main.DebugPane" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/main/DebugPane.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="-804" y="1858"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="66" language="java" name="ide.frontend.main.DebugModel" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/main/DebugModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="-418" y="1856"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="67" language="java" name="ide.frontend.main.MenuBar" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/main/MenuBar.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="-737" y="1104"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <package id="68" language="java" name="ide.frontend.menu" project="VisualIDE" file="/VisualIDE/src/ide/frontend/menu" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="-802" y="1056"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <class id="69" language="java" name="ide.frontend.main.Settings" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/main/Settings.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="-566" y="1675"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="70" language="java" name="ide.frontend.main.WelcomeView" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/main/WelcomeView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="-780" y="1539"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="71" language="java" name="ide.backend.model.BlockModel" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/model/BlockModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1194" y="2179"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="72" language="java" name="ide.frontend.classes.views.AbstractBlockController" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/classes/views/AbstractBlockController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="732" y="2245"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="73" language="java" name="ide.frontend.classes.views.BlockView" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/classes/views/BlockView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="266" y="2255"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="74" language="java" name="ide.backend.model.variables.PrintModel" project="VisualIDE" 
+    file="/VisualIDE/src/ide/backend/model/variables/PrintModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1191" y="2482"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="75" language="java" name="ide.frontend.classes.views.operations.PrintView" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/classes/views/operations/PrintView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="304" y="2494"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="76" language="java" name="ide.frontend.classes.views.operations.PrintViewController" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/classes/views/operations/PrintViewController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="752" y="2487"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="77" language="java" name="ide.frontend.classes.LoadClassViewFromModel" project="VisualIDE" 
+    file="/VisualIDE/src/ide/frontend/classes/LoadClassViewFromModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="442" y="2078"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <association id="78">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="79" name="_instances">        
+        <position height="17" width="58" x="366" y="864"/>      
+      </attribute>      
+      <multiplicity id="80" minimum="0" maximum="2147483647">        
+        <position height="15" width="21" x="428" y="866"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="81">    
+    <end type="SOURCE" refId="61"/>    
+    <end type="TARGET" refId="63"/>  
+  </dependency>  
+  <dependency id="82">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="83">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="26"/>  
+  </dependency>  
+  <dependency id="84">    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="74"/>  
+  </dependency>  
+  <dependency id="85">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="71"/>  
+  </dependency>  
+  <dependency id="86">    
+    <end type="SOURCE" refId="46"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <dependency id="87">    
+    <end type="SOURCE" refId="34"/>    
+    <end type="TARGET" refId="59"/>  
+  </dependency>  
+  <dependency id="88">    
+    <end type="SOURCE" refId="54"/>    
+    <end type="TARGET" refId="71"/>  
+  </dependency>  
+  <dependency id="89">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="90">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="91">    
+    <end type="SOURCE" refId="70"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <generalization id="92">    
+    <bendpoint x="1146" y="633"/>    
+    <bendpoint x="1142" y="1021"/>    
+    <bendpoint x="1499" y="1018"/>    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="26"/>  
+  </generalization>  
+  <dependency id="93">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <association id="94">    
+    <end type="SOURCE" refId="59" navigable="false">      
+      <attribute id="95" name="_floatingBlocks">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="96" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="71" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="97">    
+    <end type="SOURCE" refId="62" navigable="false">      
+      <attribute id="98" name="_eventView">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="99" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="42" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="100">    
+    <end type="SOURCE" refId="63" navigable="false">      
+      <attribute id="101" name="_debugModel">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="102" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="66" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="103">    
+    <end type="SOURCE" refId="40"/>    
+    <end type="TARGET" refId="46"/>  
+  </dependency>  
+  <association id="104">    
+    <end type="SOURCE" refId="63" navigable="false">      
+      <attribute id="105" name="_settings">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="106" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="69" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="107">    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="108" name="_self"/>      
+      <multiplicity id="109" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="73" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="110">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="111" name="_processes">        
+        <position height="17" width="62" x="1321" y="544"/>      
+      </attribute>      
+      <multiplicity id="112" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="113">    
+    <bendpoint x="519" y="1906"/>    
+    <end type="SOURCE" refId="56" navigable="false">      
+      <attribute id="114" name="_classController">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="115" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="60" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="116">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="117" name="_stack">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="118" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="119">    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="46"/>  
+  </dependency>  
+  <association id="120">    
+    <end type="SOURCE" refId="74" navigable="false">      
+      <attribute id="121" name="_content">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="122" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="71" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="123">    
+    <end type="SOURCE" refId="77"/>    
+    <end type="TARGET" refId="74"/>  
+  </dependency>  
+  <dependency id="124">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="125">    
+    <end type="SOURCE" refId="62"/>    
+    <end type="TARGET" refId="32"/>  
+  </dependency>  
+  <dependency id="126">    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <dependency id="127">    
+    <end type="SOURCE" refId="55"/>    
+    <end type="TARGET" refId="71"/>  
+  </dependency>  
+  <dependency id="128">    
+    <end type="SOURCE" refId="50"/>    
+    <end type="TARGET" refId="59"/>  
+  </dependency>  
+  <association id="129">    
+    <end type="SOURCE" refId="52" navigable="false">      
+      <attribute id="130" name="_panel">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="131" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="55" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="132">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <dependency id="133">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="26"/>  
+  </dependency>  
+  <dependency id="134">    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <association id="135">    
+    <end type="SOURCE" refId="53" navigable="false">      
+      <attribute id="136" name="_viewmap">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="137" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="44" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="138">    
+    <end type="SOURCE" refId="68"/>    
+    <end type="TARGET" refId="62"/>  
+  </dependency>  
+  <dependency id="139">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="39"/>  
+  </dependency>  
+  <dependency id="140">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <generalization id="141">    
+    <end type="SOURCE" refId="48"/>    
+    <end type="TARGET" refId="72"/>  
+  </generalization>  
+  <dependency id="142">    
+    <end type="SOURCE" refId="54"/>    
+    <end type="TARGET" refId="60"/>  
+  </dependency>  
+  <dependency id="143">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="46"/>  
+  </dependency>  
+  <association id="144">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="145" name="_pool">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="146" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="147">    
+    <end type="SOURCE" refId="63" navigable="false">      
+      <attribute id="148" name="_runtime"/>      
+      <multiplicity id="149" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="150">    
+    <end type="SOURCE" refId="60"/>    
+    <end type="TARGET" refId="46"/>  
+  </dependency>  
+  <dependency id="151">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="152">    
+    <end type="SOURCE" refId="34"/>    
+    <end type="TARGET" refId="39"/>  
+  </dependency>  
+  <association id="153">    
+    <bendpoint x="-75" y="1909"/>    
+    <end type="SOURCE" refId="53" navigable="false">      
+      <attribute id="154" name="_controller">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="155" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="60" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="156">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="23"/>  
+  </nesting>  
+  <dependency id="157">    
+    <end type="SOURCE" refId="34"/>    
+    <end type="TARGET" refId="33"/>  
+  </dependency>  
+  <dependency id="158">    
+    <end type="SOURCE" refId="57"/>    
+    <end type="TARGET" refId="73"/>  
+  </dependency>  
+  <dependency id="159">    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="39"/>  
+  </dependency>  
+  <dependency id="160">    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="39"/>  
+  </dependency>  
+  <dependency id="161">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="24"/>  
+  </dependency>  
+  <dependency id="162">    
+    <bendpoint x="1104" y="446"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="27"/>  
+  </dependency>  
+  <dependency id="163">    
+    <end type="SOURCE" refId="57"/>    
+    <end type="TARGET" refId="74"/>  
+  </dependency>  
+  <dependency id="164">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="59"/>  
+  </dependency>  
+  <dependency id="165">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="166">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="167">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="26"/>  
+  </dependency>  
+  <dependency id="168">    
+    <end type="SOURCE" refId="77"/>    
+    <end type="TARGET" refId="73"/>  
+  </dependency>  
+  <association id="169">    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="170" name="_code">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="171" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="24" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="172">    
+    <end type="SOURCE" refId="38" navigable="false">      
+      <attribute id="173" name="_checked"/>      
+      <multiplicity id="174" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="175">    
+    <end type="SOURCE" refId="46" navigable="false">      
+      <attribute id="176" name="_members">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="177" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="47" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="178">    
+    <end type="SOURCE" refId="34" navigable="false">      
+      <attribute id="179" name="_wirepanel">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="180" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="35" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="181">    
+    <end type="SOURCE" refId="59"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <dependency id="182">    
+    <end type="SOURCE" refId="55"/>    
+    <end type="TARGET" refId="77"/>  
+  </dependency>  
+  <dependency id="183">    
+    <end type="SOURCE" refId="63"/>    
+    <end type="TARGET" refId="29"/>  
+  </dependency>  
+  <realization id="184">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="11"/>  
+  </realization>  
+  <dependency id="185">    
+    <end type="SOURCE" refId="62"/>    
+    <end type="TARGET" refId="66"/>  
+  </dependency>  
+  <dependency id="186">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <association id="187">    
+    <end type="SOURCE" refId="77" navigable="false">      
+      <attribute id="188" name="_class">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="189" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="59" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="190">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <association id="191">    
+    <end type="SOURCE" refId="27" navigable="false">      
+      <attribute id="192" name="_members"/>      
+      <multiplicity id="193" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="194">    
+    <end type="SOURCE" refId="41"/>    
+    <end type="TARGET" refId="40"/>  
+  </dependency>  
+  <dependency id="195">    
+    <end type="SOURCE" refId="67"/>    
+    <end type="TARGET" refId="63"/>  
+  </dependency>  
+  <association id="196">    
+    <bendpoint x="1161" y="404"/>    
+    <bendpoint x="981" y="402"/>    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="197" name="_pool">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="198" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="199">    
+    <end type="SOURCE" refId="51"/>    
+    <end type="TARGET" refId="49"/>  
+  </dependency>  
+  <dependency id="200">    
+    <end type="SOURCE" refId="67"/>    
+    <end type="TARGET" refId="62"/>  
+  </dependency>  
+  <dependency id="201">    
+    <end type="SOURCE" refId="51"/>    
+    <end type="TARGET" refId="59"/>  
+  </dependency>  
+  <nesting id="202">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="4"/>  
+  </nesting>  
+  <dependency id="203">    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="46"/>  
+  </dependency>  
+  <dependency id="204">    
+    <end type="SOURCE" refId="34"/>    
+    <end type="TARGET" refId="46"/>  
+  </dependency>  
+  <dependency id="205">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="74"/>  
+  </dependency>  
+  <dependency id="206">    
+    <end type="SOURCE" refId="44"/>    
+    <end type="TARGET" refId="48"/>  
+  </dependency>  
+  <association id="207">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="208" name="_doneProcesses"/>      
+      <multiplicity id="209" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="210">    
+    <end type="SOURCE" refId="50"/>    
+    <end type="TARGET" refId="49"/>  
+  </dependency>  
+  <association id="211">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="212" name="_instances">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="213" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="214">    
+    <end type="SOURCE" refId="70"/>    
+    <end type="TARGET" refId="63"/>  
+  </dependency>  
+  <dependency id="215">    
+    <end type="SOURCE" refId="52"/>    
+    <end type="TARGET" refId="53"/>  
+  </dependency>  
+  <association id="216">    
+    <end type="SOURCE" refId="55" navigable="false">      
+      <attribute id="217" name="_controller">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="218" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="60" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="219">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="30"/>  
+  </realization>  
+  <dependency id="220">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="30"/>  
+  </dependency>  
+  <dependency id="221">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <dependency id="222">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="223">    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <association id="224">    
+    <bendpoint x="-184" y="2021"/>    
+    <end type="SOURCE" refId="58" navigable="false">      
+      <attribute id="225" name="_controller">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="226" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="60" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="227">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="18"/>  
+  </dependency>  
+  <dependency id="228">    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="46"/>  
+  </dependency>  
+  <association id="229">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="230" name="_compileCopy"/>      
+      <multiplicity id="231" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="232">    
+    <end type="SOURCE" refId="55" navigable="false">      
+      <attribute id="233" name="_model"/>      
+      <multiplicity id="234" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="59" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="235">    
+    <end type="SOURCE" refId="39" navigable="false">      
+      <attribute id="236" name="_to">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="237" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="238">    
+    <end type="SOURCE" refId="47"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <dependency id="239">    
+    <end type="SOURCE" refId="76"/>    
+    <end type="TARGET" refId="73"/>  
+  </dependency>  
+  <dependency id="240">    
+    <end type="SOURCE" refId="75"/>    
+    <end type="TARGET" refId="76"/>  
+  </dependency>  
+  <dependency id="241">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="27"/>  
+  </dependency>  
+  <association id="242">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="243" name="_runtime">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="244" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="245">    
+    <end type="SOURCE" refId="35" navigable="false">      
+      <attribute id="246" name="_v">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="247" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="34" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="248">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="47"/>  
+  </dependency>  
+  <dependency id="249">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <association id="250">    
+    <end type="SOURCE" refId="32" navigable="false">      
+      <attribute id="251" name="_collection">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="252" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="253">    
+    <end type="SOURCE" refId="59"/>    
+    <end type="TARGET" refId="26"/>  
+  </dependency>  
+  <dependency id="254">    
+    <end type="SOURCE" refId="48"/>    
+    <end type="TARGET" refId="47"/>  
+  </dependency>  
+  <dependency id="255">    
+    <end type="SOURCE" refId="68"/>    
+    <end type="TARGET" refId="63"/>  
+  </dependency>  
+  <association id="256">    
+    <end type="SOURCE" refId="42" navigable="false">      
+      <attribute id="257" name="_eventViews">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="258" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="43" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="259">    
+    <end type="SOURCE" refId="62"/>    
+    <end type="TARGET" refId="49"/>  
+  </dependency>  
+  <dependency id="260">    
+    <end type="SOURCE" refId="71"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <association id="261">    
+    <bendpoint x="-65" y="1738"/>    
+    <end type="SOURCE" refId="51" navigable="false">      
+      <attribute id="262" name="_blocks">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="263" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="57" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="264">    
+    <end type="SOURCE" refId="59"/>    
+    <end type="TARGET" refId="30"/>  
+  </dependency>  
+  <dependency id="265">    
+    <end type="SOURCE" refId="34"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="266">    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="267">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="46"/>  
+  </dependency>  
+  <association id="268">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="269" name="_defaultEvents"/>      
+      <multiplicity id="270" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="271">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="272">    
+    <end type="SOURCE" refId="62"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="273">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="74"/>  
+  </dependency>  
+  <dependency id="274">    
+    <end type="SOURCE" refId="43"/>    
+    <end type="TARGET" refId="47"/>  
+  </dependency>  
+  <association id="275">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="276" name="_instances">        
+        <position height="0" width="0" x="178" y="518"/>      
+      </attribute>      
+      <multiplicity id="277" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="178" y="518"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="278">    
+    <end type="SOURCE" refId="37" navigable="false">      
+      <attribute id="279" name="_wirePanel">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="280" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="35" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="281">    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="29"/>  
+  </generalization>  
+  <association id="282">    
+    <bendpoint x="-411" y="625"/>    
+    <end type="SOURCE" refId="62" navigable="false">      
+      <attribute id="283" name="_canvas">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="284" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="285">    
+    <end type="SOURCE" refId="57"/>    
+    <end type="TARGET" refId="75"/>  
+  </dependency>  
+  <dependency id="286">    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="47"/>  
+  </dependency>  
+  <dependency id="287">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="288">    
+    <end type="SOURCE" refId="61"/>    
+    <end type="TARGET" refId="62"/>  
+  </dependency>  
+  <dependency id="289">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="290">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <association id="291">    
+    <bendpoint x="579" y="1497"/>    
+    <end type="SOURCE" refId="56" navigable="false">      
+      <attribute id="292" name="_eventModels">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="293" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="294">    
+    <end type="SOURCE" refId="58"/>    
+    <end type="TARGET" refId="59"/>  
+  </dependency>  
+  <dependency id="295">    
+    <end type="SOURCE" refId="76"/>    
+    <end type="TARGET" refId="74"/>  
+  </dependency>  
+  <association id="296">    
+    <end type="SOURCE" refId="27" navigable="false">      
+      <attribute id="297" name="_event">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="298" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="299">    
+    <end type="SOURCE" refId="52" navigable="false">      
+      <attribute id="300" name="_model"/>      
+      <multiplicity id="301" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="59" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="302">    
+    <end type="SOURCE" refId="36" navigable="false">      
+      <attribute id="303" name="_model">        
+        <position height="17" width="43" x="321" y="833"/>      
+      </attribute>      
+      <multiplicity id="304" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="305">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="18"/>  
+  </dependency>  
+  <dependency id="306">    
+    <end type="SOURCE" refId="42"/>    
+    <end type="TARGET" refId="46"/>  
+  </dependency>  
+  <dependency id="307">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <dependency id="308">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="27"/>  
+  </dependency>  
+  <association id="309">    
+    <end type="SOURCE" refId="62" navigable="false">      
+      <attribute id="310" name="_debugPane">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="311" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="65" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="312">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <dependency id="313">    
+    <end type="SOURCE" refId="52"/>    
+    <end type="TARGET" refId="58"/>  
+  </dependency>  
+  <association id="314">    
+    <bendpoint x="1310" y="318"/>    
+    <bendpoint x="1086" y="280"/>    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="315" name="_frame">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="316" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="317">    
+    <end type="SOURCE" refId="36" navigable="false">      
+      <attribute id="318" name="_t"/>      
+      <multiplicity id="319" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="36" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="320">    
+    <end type="SOURCE" refId="55" navigable="false">      
+      <attribute id="321" name="_contains">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="322" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="73" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="323">    
+    <end type="SOURCE" refId="59"/>    
+    <end type="TARGET" refId="71"/>  
+  </generalization>  
+  <dependency id="324">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="72"/>  
+  </dependency>  
+  <dependency id="325">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <association id="326">    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="327" name="_functions"/>      
+      <multiplicity id="328" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="24" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="329">    
+    <end type="SOURCE" refId="39" navigable="false">      
+      <attribute id="330" name="_from">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="331" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="332">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <association id="333">    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="334" name="_bodycomps"/>      
+      <multiplicity id="335" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="73" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="336">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="337" name="_dispatcher">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="338" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="339">    
+    <end type="SOURCE" refId="63"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <association id="340">    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="341" name="_stack">        
+        <position height="17" width="38" x="1365" y="633"/>      
+      </attribute>      
+      <multiplicity id="342" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="343">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="344" name="_models">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="345" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="59" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="346">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="35"/>  
+  </dependency>  
+  <generalization id="347">    
+    <end type="SOURCE" refId="46"/>    
+    <end type="TARGET" refId="71"/>  
+  </generalization>  
+  <association id="348">    
+    <end type="SOURCE" refId="38" navigable="false">      
+      <attribute id="349" name="_unchecked"/>      
+      <multiplicity id="350" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="351">    
+    <end type="SOURCE" refId="55" navigable="false">      
+      <attribute id="352" name="wires">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="353" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="54" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="354">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <dependency id="355">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <association id="356">    
+    <end type="SOURCE" refId="35" navigable="false">      
+      <attribute id="357" name="_pressedInstanceOut"/>      
+      <multiplicity id="358" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="359">    
+    <end type="SOURCE" refId="35" navigable="false">      
+      <attribute id="360" name="_instances">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="361" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="36" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="362">    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="363" name="_events">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="364" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="365">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <generalization id="366">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="71"/>  
+  </generalization>  
+  <dependency id="367">    
+    <end type="SOURCE" refId="43"/>    
+    <end type="TARGET" refId="45"/>  
+  </dependency>  
+  <dependency id="368">    
+    <end type="SOURCE" refId="63"/>    
+    <end type="TARGET" refId="30"/>  
+  </dependency>  
+  <dependency id="369">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="32"/>  
+  </dependency>  
+  <dependency id="370">    
+    <end type="SOURCE" refId="70"/>    
+    <end type="TARGET" refId="62"/>  
+  </dependency>  
+  <association id="371">    
+    <end type="SOURCE" refId="28" navigable="false">      
+      <attribute id="372" name="_collection">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="373" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="374">    
+    <end type="SOURCE" refId="51"/>    
+    <end type="TARGET" refId="50"/>  
+  </dependency>  
+  <dependency id="375">    
+    <end type="SOURCE" refId="52"/>    
+    <end type="TARGET" refId="49"/>  
+  </dependency>  
+  <association id="376">    
+    <end type="SOURCE" refId="34" navigable="false">      
+      <attribute id="377" name="_filter">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="378" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="38" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="379">    
+    <end type="SOURCE" refId="47"/>    
+    <end type="TARGET" refId="30"/>  
+  </dependency>  
+  <dependency id="380">    
+    <end type="SOURCE" refId="60"/>    
+    <end type="TARGET" refId="59"/>  
+  </dependency>  
+  <dependency id="381">    
+    <end type="SOURCE" refId="72"/>    
+    <end type="TARGET" refId="71"/>  
+  </dependency>  
+  <association id="382">    
+    <bendpoint x="799" y="1423"/>    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="383" name="_events">        
+        <position height="17" width="47" x="535" y="1428"/>      
+      </attribute>      
+      <multiplicity id="384" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="385">    
+    <bendpoint x="1564" y="579"/>    
+    <bendpoint x="1573" y="116"/>    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="386" name="_instance">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="387" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="388">    
+    <end type="SOURCE" refId="74"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <association id="389">    
+    <bendpoint x="625" y="1349"/>    
+    <end type="SOURCE" refId="39" navigable="false">      
+      <attribute id="390" name="_event">        
+        <position height="17" width="40" x="523" y="1391"/>      
+      </attribute>      
+      <multiplicity id="391" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="392">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <association id="393">    
+    <bendpoint x="799" y="1648"/>    
+    <end type="SOURCE" refId="49" navigable="false">      
+      <attribute id="394" name="_collection">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="395" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="396">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="397" name="_runtimeData">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="398" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="399">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="400">    
+    <end type="SOURCE" refId="68"/>    
+    <end type="TARGET" refId="29"/>  
+  </dependency>  
+  <dependency id="401">    
+    <end type="SOURCE" refId="77"/>    
+    <end type="TARGET" refId="47"/>  
+  </dependency>  
+  <dependency id="402">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <generalization id="403">    
+    <end type="SOURCE" refId="74"/>    
+    <end type="TARGET" refId="71"/>  
+  </generalization>  
+  <dependency id="404">    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="59"/>  
+  </dependency>  
+  <dependency id="405">    
+    <end type="SOURCE" refId="62"/>    
+    <end type="TARGET" refId="40"/>  
+  </dependency>  
+  <dependency id="406">    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <association id="407">    
+    <end type="SOURCE" refId="55" navigable="false">      
+      <attribute id="408" name="_select">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="409" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="57" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="410">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <dependency id="411">    
+    <end type="SOURCE" refId="46"/>    
+    <end type="TARGET" refId="30"/>  
+  </dependency>  
+  <association id="412">    
+    <end type="SOURCE" refId="71" navigable="false">      
+      <attribute id="413" name="_parent">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="414" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="71" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="415">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="416" name="_class"/>      
+      <multiplicity id="417" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="59" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="418">    
+    <end type="SOURCE" refId="54" navigable="false">      
+      <attribute id="419" name="_pressedEvent"/>      
+      <multiplicity id="420" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="421">    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="422" name="_eventPool">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="423" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="424">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <association id="425">    
+    <end type="SOURCE" refId="34" navigable="false">      
+      <attribute id="426" name="_instances">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="427" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="37" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="428">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="39"/>  
+  </dependency>  
+  <association id="429">    
+    <end type="SOURCE" refId="62" navigable="false">      
+      <attribute id="430" name="_welcomeView">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="431" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="70" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="432">    
+    <end type="SOURCE" refId="35" navigable="false">      
+      <attribute id="433" name="_pressedInstanceIn"/>      
+      <multiplicity id="434" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="435">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="27"/>  
+  </dependency>  
+  <dependency id="436">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="47"/>  
+  </dependency>  
+  <association id="437">    
+    <end type="SOURCE" refId="55" navigable="false">      
+      <attribute id="438" name="_classCreation"/>      
+      <multiplicity id="439" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="49" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="440">    
+    <end type="SOURCE" refId="53"/>    
+    <end type="TARGET" refId="59"/>  
+  </dependency>  
+  <dependency id="441">    
+    <end type="SOURCE" refId="54"/>    
+    <end type="TARGET" refId="56"/>  
+  </dependency>  
+  <dependency id="442">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="25"/>  
+  </dependency>  
+  <dependency id="443">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="444">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="12"/>  
+  </dependency>  
+  <dependency id="445">    
+    <end type="SOURCE" refId="57"/>    
+    <end type="TARGET" refId="47"/>  
+  </dependency>  
+  <dependency id="446">    
+    <end type="SOURCE" refId="62"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <association id="447">    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="448" name="_panel">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="449" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="55" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="450">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="24"/>  
+  </realization>  
+  <dependency id="451">    
+    <end type="SOURCE" refId="60"/>    
+    <end type="TARGET" refId="71"/>  
+  </dependency>  
+  <association id="452">    
+    <end type="SOURCE" refId="56" navigable="false">      
+      <attribute id="453" name="_panel">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="454" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="55" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="455">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="34"/>  
+  </dependency>  
+  <association id="456">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="457" name="_models"/>      
+      <multiplicity id="458" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="459">    
+    <end type="SOURCE" refId="50"/>    
+    <end type="TARGET" refId="46"/>  
+  </dependency>  
+  <dependency id="460">    
+    <end type="SOURCE" refId="49"/>    
+    <end type="TARGET" refId="59"/>  
+  </dependency>  
+  <dependency id="461">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="462">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <association id="463">    
+    <bendpoint x="973" y="232"/>    
+    <bendpoint x="1191" y="238"/>    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="464" name="_nameOfInstances">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="465" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="466">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="467">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="71"/>  
+  </dependency>  
+  <association id="468">    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="469" name="_parent"/>      
+      <multiplicity id="470" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="73" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="471">    
+    <end type="SOURCE" refId="37"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="472">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="46"/>  
+  </dependency>  
+  <dependency id="473">    
+    <end type="SOURCE" refId="62"/>    
+    <end type="TARGET" refId="67"/>  
+  </dependency>  
+  <dependency id="474">    
+    <end type="SOURCE" refId="55"/>    
+    <end type="TARGET" refId="46"/>  
+  </dependency>  
+  <association id="475">    
+    <end type="SOURCE" refId="62" navigable="false">      
+      <attribute id="476" name="_wireView">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="477" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="34" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="478">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="24"/>  
+  </dependency>  
+  <association id="479">    
+    <end type="SOURCE" refId="35" navigable="false">      
+      <attribute id="480" name="_pressedEventModel"/>      
+      <multiplicity id="481" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="482">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="22"/>  
+  </dependency>  
+  <association id="483">    
+    <end type="SOURCE" refId="56" navigable="false">      
+      <attribute id="484" name="_creationModel"/>      
+      <multiplicity id="485" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="49" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="486">    
+    <end type="SOURCE" refId="75"/>    
+    <end type="TARGET" refId="55"/>  
+  </dependency>  
+  <association id="487">    
+    <bendpoint x="625" y="441"/>    
+    <bendpoint x="636" y="118"/>    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="488" name="_classPool">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="489" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="490">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="71"/>  
+  </generalization>  
+  <dependency id="491">    
+    <end type="SOURCE" refId="56"/>    
+    <end type="TARGET" refId="50"/>  
+  </dependency>  
+  <association id="492">    
+    <end type="SOURCE" refId="62" navigable="false">      
+      <attribute id="493" name="_dataEditor">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="494" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="64" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="495">    
+    <end type="SOURCE" refId="70"/>    
+    <end type="TARGET" refId="29"/>  
+  </dependency>  
+  <dependency id="496">    
+    <end type="SOURCE" refId="49"/>    
+    <end type="TARGET" refId="46"/>  
+  </dependency>  
+  <association id="497">    
+    <end type="SOURCE" refId="38" navigable="false">      
+      <attribute id="498" name="_v">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="499" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="34" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="500">    
+    <end type="SOURCE" refId="76"/>    
+    <end type="TARGET" refId="71"/>  
+  </dependency>  
+  <dependency id="501">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="502">    
+    <end type="SOURCE" refId="63"/>    
+    <end type="TARGET" refId="31"/>  
+  </dependency>  
+  <association id="503">    
+    <end type="SOURCE" refId="55" navigable="false">      
+      <attribute id="504" name="_inputView">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="505" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="56" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="506">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="18"/>  
+  </dependency>  
+  <dependency id="507">    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="26"/>  
+  </dependency>  
+  <association id="508">    
+    <end type="SOURCE" refId="53" navigable="false">      
+      <attribute id="509" name="_select">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="510" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="57" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="511">    
+    <end type="SOURCE" refId="77"/>    
+    <end type="TARGET" refId="75"/>  
+  </dependency>  
+  <dependency id="512">    
+    <end type="SOURCE" refId="42"/>    
+    <end type="TARGET" refId="41"/>  
+  </dependency>  
+  <dependency id="513">    
+    <end type="SOURCE" refId="68"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <association id="514">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="515" name="_wires">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="516" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="39" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="517">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="518">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="519">    
+    <end type="SOURCE" refId="72"/>    
+    <end type="TARGET" refId="75"/>  
+  </dependency>  
+  <dependency id="520">    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="59"/>  
+  </dependency>  
+  <dependency id="521">    
+    <end type="SOURCE" refId="37"/>    
+    <end type="TARGET" refId="59"/>  
+  </dependency>  
+  <association id="522">    
+    <end type="SOURCE" refId="63" navigable="false">      
+      <attribute id="523" name="_collection"/>      
+      <multiplicity id="524" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="525">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="71"/>  
+  </generalization>  
+  <association id="526">    
+    <bendpoint x="588" y="1339"/>    
+    <end type="SOURCE" refId="40" navigable="false">      
+      <attribute id="527" name="_collection">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="528" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="529">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="530" name="_compiler">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="531" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="532">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="21"/>  
+  </dependency>  
+  <dependency id="533">    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="534">    
+    <end type="SOURCE" refId="65"/>    
+    <end type="TARGET" refId="66"/>  
+  </dependency>  
+  <dependency id="535">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="536">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="27"/>  
+  </dependency>  
+  <dependency id="537">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="26"/>  
+  </dependency>  
+  <dependency id="538">    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="74"/>  
+  </dependency>  
+  <dependency id="539">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="540">    
+    <end type="SOURCE" refId="62"/>    
+    <end type="TARGET" refId="30"/>  
+  </dependency>  
+  <dependency id="541">    
+    <end type="SOURCE" refId="63"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <association id="542">    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="543" name="_vm">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="544" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="545">    
+    <end type="SOURCE" refId="72"/>    
+    <end type="TARGET" refId="73"/>  
+  </dependency>  
+  <dependency id="546">    
+    <end type="SOURCE" refId="68"/>    
+    <end type="TARGET" refId="69"/>  
+  </dependency>  
+  <dependency id="547">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="36"/>  
+  </dependency>  
+  <dependency id="548">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <association id="549">    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="550" name="_unsnapped"/>      
+      <multiplicity id="551" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="73" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="552">    
+    <bendpoint x="274" y="802"/>    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="553" name="_model">        
+        <position height="0" width="0" x="178" y="518"/>      
+      </attribute>      
+      <multiplicity id="554" minimum="0" maximum="1">        
+        <position height="0" width="0" x="178" y="518"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="555">    
+    <end type="SOURCE" refId="77"/>    
+    <end type="TARGET" refId="46"/>  
+  </dependency>  
+  <dependency id="556">    
+    <end type="SOURCE" refId="71"/>    
+    <end type="TARGET" refId="30"/>  
+  </dependency>  
+  <association id="557">    
+    <end type="SOURCE" refId="75" navigable="false">      
+      <attribute id="558" name="_body">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="559" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="73" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="560">    
+    <end type="SOURCE" refId="70"/>    
+    <end type="TARGET" refId="30"/>  
+  </dependency>  
+  <association id="561">    
+    <end type="SOURCE" refId="62" navigable="false">      
+      <attribute id="562" name="_frameModel">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="563" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="63" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="564">    
+    <end type="SOURCE" refId="62" navigable="false">      
+      <attribute id="565" name="_classView">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="566" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="51" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="567">    
+    <end type="SOURCE" refId="56" navigable="false">      
+      <attribute id="568" name="h"/>      
+      <multiplicity id="569" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="56" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="570">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <association id="571">    
+    <bendpoint x="644" y="419"/>    
+    <bendpoint x="647" y="276"/>    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="572" name="_wireFrame">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="573" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="574">    
+    <end type="SOURCE" refId="43" navigable="false">      
+      <attribute id="575" name="_members">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="576" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="44" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="577">    
+    <end type="SOURCE" refId="62"/>    
+    <end type="TARGET" refId="69"/>  
+  </dependency>  
+  <association id="578">    
+    <end type="SOURCE" refId="59" navigable="false">      
+      <attribute id="579" name="_inputEvents"/>      
+      <multiplicity id="580" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="581">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <generalization id="582">    
+    <end type="SOURCE" refId="75"/>    
+    <end type="TARGET" refId="73"/>  
+  </generalization>  
+  <association id="583">    
+    <end type="SOURCE" refId="25" navigable="false">      
+      <attribute id="584" name="_innerBlock"/>      
+      <multiplicity id="585" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="24" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="586">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="39"/>  
+  </dependency>  
+  <association id="587">    
+    <end type="SOURCE" refId="77" navigable="false">      
+      <attribute id="588" name="_panel">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="589" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="55" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="590">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <dependency id="591">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="39"/>  
+  </dependency>  
+  <association id="592">    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="593" name="_classes">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="594" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="595">    
+    <end type="SOURCE" refId="28" navigable="false">      
+      <attribute id="596" name="_currentClass"/>      
+      <multiplicity id="597" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="59" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="598">    
+    <end type="SOURCE" refId="41"/>    
+    <end type="TARGET" refId="46"/>  
+  </dependency>  
+  <dependency id="599">    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="71"/>  
+  </dependency>  
+  <dependency id="600">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="24"/>  
+  </dependency>  
+  <dependency id="601">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <dependency id="602">    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="39"/>  
+  </dependency>  
+  <dependency id="603">    
+    <end type="SOURCE" refId="62"/>    
+    <end type="TARGET" refId="29"/>  
+  </dependency>  
+  <association id="604">    
+    <bendpoint x="798" y="1073"/>    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="605" name="_wireFrameModel">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="606" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="607">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="59"/>  
+  </dependency>  
+  <association id="608">    
+    <end type="SOURCE" refId="36" navigable="false">      
+      <attribute id="609" name="_panel">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="610" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="35" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="611">    
+    <end type="SOURCE" refId="77"/>    
+    <end type="TARGET" refId="71"/>  
+  </dependency>  
+  <dependency id="612">    
+    <end type="SOURCE" refId="47"/>    
+    <end type="TARGET" refId="71"/>  
+  </dependency>  
+  <association id="613">    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="614" name="_pool">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="615" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="616">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="617" name="_runtime">        
+        <position height="0" width="0" x="322" y="304"/>      
+      </attribute>      
+      <multiplicity id="618" minimum="0" maximum="1">        
+        <position height="0" width="0" x="322" y="304"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="619">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="620">    
+    <end type="SOURCE" refId="37"/>    
+    <end type="TARGET" refId="36"/>  
+  </dependency>  
+  <dependency id="621">    
+    <end type="SOURCE" refId="52"/>    
+    <end type="TARGET" refId="57"/>  
+  </dependency>  
+  <dependency id="622">    
+    <end type="SOURCE" refId="57"/>    
+    <end type="TARGET" refId="71"/>  
+  </dependency>  
+  <dependency id="623">    
+    <end type="SOURCE" refId="68"/>    
+    <end type="TARGET" refId="30"/>  
+  </dependency>  
+  <association id="624">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="625" name="_members"/>      
+      <multiplicity id="626" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="627">    
+    <end type="SOURCE" refId="76"/>    
+    <end type="TARGET" refId="72"/>  
+  </generalization>  
+  <dependency id="628">    
+    <end type="SOURCE" refId="34"/>    
+    <end type="TARGET" refId="36"/>  
+  </dependency>  
+  <dependency id="629">    
+    <end type="SOURCE" refId="51"/>    
+    <end type="TARGET" refId="52"/>  
+  </dependency>  
+  <dependency id="630">    
+    <end type="SOURCE" refId="68"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="631">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="59"/>  
+  </dependency>  
+  <association id="632">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="633" name="_catcher">        
+        <position height="0" width="0" x="178" y="518"/>      
+      </attribute>      
+      <multiplicity id="634" minimum="0" maximum="1">        
+        <position height="0" width="0" x="178" y="518"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="635">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="636" name="_metatable">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="637" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="638">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="639" name="_eventProcesses"/>      
+      <multiplicity id="640" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

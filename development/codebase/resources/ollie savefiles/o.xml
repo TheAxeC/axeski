@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<program>
+    <events>
+        <event type="j">
+            <member name="a" type="STRING"/>
+        </event>
+    </events>
+    <classes>
+        <class name="$$ùùµù">
+            <events>
+                <inputEvent type="j"/>
+                <inputEvent type="&lt;Start&gt;"/>
+            </events>
+            <emits>
+                <outputEvent type="j"/>
+            </emits>
+            <memberVariables>
+                <member name="pp" type="STRING"/>
+            </memberVariables>
+            <handlers>
+                <handler event="&lt;Start&gt;" name="" x="66.0" y="277.0">
+                    <block x="23.0" y="32.0">
+                        <makeVar name="xx" type="STRING" x="0.0" y="0.0"/>
+                        <setVar name="xx" x="0.0" y="58.0">
+                            <value x="140.0" y="10.0">deze applicatie suckt</value>
+                        </setVar>
+                        <emit name="j" x="0.0" y="116.0">
+                            <var member="a" name="xx"/>
+                        </emit>
+                    </block>
+                </handler>
+                <handler event="j" name="" x="382.0" y="58.0">
+                    <block x="23.0" y="32.0">
+                        <setVar name="pp" x="0.0" y="0.0">
+                            <access name="a" x="140.0" y="10.0"/>
+                        </setVar>
+                        <print x="0.0" y="58.0">
+                            <var name="pp"/>
+                        </print>
+                    </block>
+                </handler>
+            </handlers>
+            <functions/>
+            <floatingBlocks>
+                <access name="" x="-248.0" y="339.0"/>
+            </floatingBlocks>
+            <costumes/>
+        </class>
+    </classes>
+    <wireframe>
+        <instances>
+            <instance class="$$ùùµù" name="ee" x="163.0" y="270.0"/>
+        </instances>
+        <wires>
+            <wire event="j" from="ee" to="ee"/>
+        </wires>
+    </wireframe>
+</program>

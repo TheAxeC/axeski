@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<program>
+    <events/>
+    <classes>
+        <class name="test">
+            <events>
+                <inputEvent type="&lt;keyA&gt;"/>
+                <inputEvent type="&lt;keyD&gt;"/>
+                <inputEvent type="&lt;keyS&gt;"/>
+                <inputEvent type="&lt;keyW&gt;"/>
+                <inputEvent type="&lt;mousePress&gt;"/>
+            </events>
+            <emits/>
+            <memberVariables/>
+            <handlers>
+                <handler event="&lt;keyS&gt;" name="" x="66.0" y="419.0">
+                    <block x="23.0" y="32.0">
+                        <move x="0.0" y="0.0">
+                            <x>
+                                <value x="50.0" y="20.0">0</value>
+                            </x>
+                            <y>
+                                <value x="190.0" y="20.0">10</value>
+                            </y>
+                        </move>
+                    </block>
+                </handler>
+                <handler event="&lt;keyW&gt;" name="" x="574.0" y="210.0">
+                    <block x="23.0" y="32.0">
+                        <move x="0.0" y="0.0">
+                            <x>
+                                <value x="50.0" y="20.0">0</value>
+                            </x>
+                            <y>
+                                <value x="190.0" y="20.0">-10</value>
+                            </y>
+                        </move>
+                    </block>
+                </handler>
+                <handler event="&lt;keyA&gt;" name="" x="646.0" y="22.0">
+                    <block x="23.0" y="32.0">
+                        <move x="0.0" y="0.0">
+                            <x>
+                                <value x="50.0" y="20.0">-10</value>
+                            </x>
+                            <y>
+                                <value x="190.0" y="20.0">0</value>
+                            </y>
+                        </move>
+                    </block>
+                </handler>
+                <handler event="&lt;mousePress&gt;" name="" x="262.0" y="291.0">
+                    <block x="23.0" y="32.0">
+                        <FunctionCall name="right" x="0.0" y="0.0">
+                            <params/>
+                            <returns/>
+                        </FunctionCall>
+                    </block>
+                </handler>
+                <handler event="&lt;keyD&gt;" name="" x="407.0" y="119.0">
+                    <block x="23.0" y="32.0">
+                        <FunctionCall name="right" x="0.0" y="0.0">
+                            <params/>
+                            <returns/>
+                        </FunctionCall>
+                    </block>
+                </handler>
+            </handlers>
+            <functions>
+                <function name="right" x="507.0" y="440.0">
+                    <params/>
+                    <block x="20.0" y="40.0">
+                        <move x="0.0" y="0.0">
+                            <x>
+                                <value x="50.0" y="20.0">10</value>
+                            </x>
+                            <y>
+                                <value x="190.0" y="20.0">0</value>
+                            </y>
+                        </move>
+                    </block>
+                </function>
+            </functions>
+            <floatingBlocks/>
+            <costumes>
+                <costume name="test" path="test_test"/>
+            </costumes>
+        </class>
+    </classes>
+    <wireframe>
+        <instances>
+            <instance class="test" name="tester" x="374.0" y="164.0"/>
+        </instances>
+        <wires/>
+    </wireframe>
+</program>

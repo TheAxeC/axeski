@@ -1,0 +1,54 @@
+\documentclass[]{article}
+
+\begin{document}
+
+\section{Mogelijke Uitbreidingen}
+\label{uitbreidingen}
+Er zijn verschillende uitbreidingen mogelijk. Sommige van deze uitbreidingen zijn de toevoeging van kleine features, andere uitbreidingen brengen grotere veranderen aan de IDE. Alle functionaliteit die we beloofd hadden in het analyseverslag hebben we kunnen implementeren. 
+
+\subsection{Extra blocks invoegen}
+Er kunnen extra blokken bijgemaakt worden. Om een blok te maken moeten er enkele zaken aangepast/aangemaakt worden. Het vereist veel stappen om een nieuwe blok toe te voegen, maar hierdoor blijven de verschillende verantwoordelijkheden goed gescheiden van elkaar.
+\begin{itemize}
+\item Een executie block, afgeleid van de basis klasse Block.
+		Deze bevat de uitvoeringslogica.
+\item Een model, afgeleid van de basis klasse BlockModel
+		De bevat de model logica, zoals error en type checking.
+\item De view,  afgeleid van de basis klasse BlockView. Deze bevat het uiterlijk van de view
+\item De controller, afgeleid van AbstractBlockController. Deze vormt een brug tussen het model en de view.
+\item Een compile functie in de Compiler.
+\item Een save functie in de DataSaver.
+\item Een load functie in de DataLoader.
+\item Een entry in SelectBlocksPanel, zodanig dat de gebruiker de blok kan gebruiken.
+\item Een entry in de LoadClassViewFromModel, zodanig dat de omzetting van de model naar het view gebeurt..
+\end{itemize}
+
+\subsection{Selectie via muis}
+De gebruiker zou hierbij een veld kunnen selecteren met zijn cursor. Alle blokken binnen dit veld zullen dan gelijktijd geselecteerd zijn. Ze kunnen dan samen verplaatst of verwijderd worden.
+
+\subsection{Meerdere return waardes}
+Zoals vermeld in Sectie~\ref{returnwaardes} ondersteund de uitvoeromgeving meerdere returnwaardes voor functies. De GUI ondersteund dit niet. Een simpele uitbreiding zou zijn om de GUI dit wel te laten implementeren. Er is modulair gewerkt om parameters en returnwaardes visueel te plaatsen. Het overstappen van \'{e}\'{e}n returnwaarde naar meerdere werkt slechts een kleine aanpassing aan het visuele view.
+
+\subsection{Clone blocks}
+Een handige feature zou het clonen van blokken zijn in het klasse-view. Code duplicatie is uiteraard een teken van slechte software. Echter is het kopi\"eren van enkele blokken tijdbesparend. Als de gebruiker drie blokken apart moet plaatsen, zal hij meer tijd verliezen dan wanneer hij deze zou kunnen kopi\"eren. \\\\
+Deze feature zou gemakkelijk gerealiseerd kunenn door een clone functie te implementeren op de modellen, en de views opnieuw te genereren. Een andere mogelijk zou zijn om de te-clonen blok om te zetten naar zijn xml representatie en deze terug in de laden. Het inladen genereert al modellen en views. Hiervoor is geen verandering nodig aan de model klasse. 
+
+\subsection{Undo/Redo}
+Een undo of redo actie is ook een nuttige feature voor gebruikers. Een mogelijke implementatie zou zijn om een stack bij te houden van de veranderen die plaats vinden in de IDE. De undo knop zou deze veranderen vervolgens kunnen reversen. 
+
+\subsection{Meerdere projecten}
+De mogelijkheid om meerdere projecten open te hebben staan in de IDE zou ook een handige feature kunnen zijn. Dit vereist slechts een kleine aanpassing aan de IDE. Achterliggend kan de IDE een lijst bijhouden van XML-data. Als de gebruiker een ander project opent, word het huidge project opgeslagen in de lijst, en het andere project aangemaakt of ingeladen. Aan de gebruikers kant kan dit getoond worden als verschillende tabbladen voor de verschillende projecten.
+
+\subsection{Java bindings}
+Een meer geavanceerde uitbreiding zou de mogelijkheid tot Java-bindings zijn. De gebruiker zou dan zelf blokken kunnen aanmaken. Dit vereist een grotere aanpassing. Het aanmaken van een blok zou versimpelt moeten worden zodanig dat de gebruiker zich niet moet bezighouden met interne werkingen van inladen, opslaan, compileren, etc. Om dit te realiseren zou reflectie gebruikt kunnen worden in combinatie met een goed systeem wat alle interne werking zoals het opslaan, inladen en compileren afhandelt.
+
+\subsection{Extra data structuren}
+Het toevoegen van extra data-structuren zoals lijsten zou ook handig zijn voor complexere programma's. In de IDE wordt een base class variable gebruikt, hiermee kunnen simpel nieuwe data types aangemaakt kunnen worden. Voor het manipuleren van deze data zouden extra blokken aangemaakt moeten worden (zoals een getVariableOnIndex blok voor een lijst). Het toevoegen van extra data structuren vereist niet veel meer werk dan het toevoegen van nieuwe blokken.
+
+\subsection{Meer debug opties}
+De toevoeging vane extra debug opties zoals het tonen van statestieken zodat de gebruiker kan zien hoeveel processen er zijn, enz. De terugkoppeling van zulke statestieken is mogelijk via het observer patroon dat gebruikt wordt voor de debugging. Deze data moet enkel gegenereerd worden in de virtual machine, doorgegeven worden via het observer patroon en dan kan het view deze informatie tonen in een dialoog.
+
+\subsection{Static functions}
+Momenteel behoren functies tot een bepaalde klasse. Een functie van klasse A kan niet gebruikt worden door klasse B. Om code herbruikbaarder te maken en code duplicatie te vermijden zouden statische functies, functies die door elke klasse gebruikt kunnen worden, een goede toevoeging zijn. \\\\
+Aan de backend moet weinig veranderen voor deze uitbreiding. De ModelCollection zou een lijst van functies bevatten die dan aan elke gecompileerde klasse meegeven wordt zodanig dat de klasse deze functies kan gebruiken. Aan de front-end moet wel veel veranderen. Er moet een extra view ingevoerd worden waarin de gebruiker deze functies kan maken. Dit view zal gelijkaardig zijn aan het klasse-view, echter kunnen hierin geen member variabelen gebruikt worden. Het nieuwe view kan bijvoorbeeld afleiden van dezelfde basis klasse als het klasse-view. 
+
+\end{document}

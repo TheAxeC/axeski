@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<program>
+    <events/>
+    <classes>
+        <class name="ghn">
+            <events>
+                <inputEvent type="&lt;Start&gt;"/>
+            </events>
+            <emits/>
+            <handlers/>
+            <functions/>
+            <memberVariables/>
+        </class>
+    </classes>
+    <wireframe>
+        <instances/>
+        <wires/>
+    </wireframe>
+</program>

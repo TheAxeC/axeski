@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<program>
+    <events>
+        <event type="a">
+            <member name="cos" type="NUMBER"/>
+        </event>
+        <event type="b">
+            <member name="cos" type="NUMBER"/>
+        </event>
+        <event type="c">
+            <member name="cos" type="NUMBER"/>
+        </event>
+    </events>
+    <classes>
+        <class name="Chooser">
+            <events>
+                <inputEvent type="&lt;Start&gt;"/>
+            </events>
+            <emits>
+                <outputEvent type="c"/>
+                <outputEvent type="b"/>
+                <outputEvent type="a"/>
+            </emits>
+            <memberVariables/>
+            <handlers>
+                <handler event="&lt;Start&gt;" name="" x="258.0" y="33.0">
+                    <block x="23.0" y="32.0">
+                        <FunctionCall name="loop" x="0.0" y="0.0">
+                            <params/>
+                            <returns/>
+                        </FunctionCall>
+                    </block>
+                </handler>
+            </handlers>
+            <functions>
+                <function name="loop" x="35.0" y="195.0">
+                    <params/>
+                    <block x="20.0" y="40.0">
+                        <makeVar name="x" type="NUMBER" x="0.0" y="0.0"/>
+                        <forever x="0.0" y="58.0">
+                            <block x="23.0" y="23.0">
+                                <FunctionCall name="ChoseImage" x="0.0" y="0.0">
+                                    <params/>
+                                    <returns>
+                                        <var name="x" x="130.0" y="10.0"/>
+                                    </returns>
+                                </FunctionCall>
+                                <FunctionCall name="ChoseEvent" x="0.0" y="53.0">
+                                    <params>
+                                        <var name="x" x="100.0" y="10.0"/>
+                                    </params>
+                                    <returns/>
+                                </FunctionCall>
+                                <sleep x="0.0" y="106.0">
+                                    <value x="50.0" y="10.0">500</value>
+                                </sleep>
+                            </block>
+                        </forever>
+                    </block>
+                </function>
+                <function name="ChoseImage" x="729.0" y="39.0">
+                    <return type="NUMBER"/>
+                    <params/>
+                    <block x="20.0" y="40.0">
+                        <makeVar name="x" type="NUMBER" x="0.0" y="0.0"/>
+                        <setVar name="x" x="0.0" y="58.0">
+                            <random x="140.0" y="10.0"/>
+                        </setVar>
+                        <if x="0.0" y="111.0">
+                            <cond>
+                                <operator op="&lt;" x="50.0" y="10.0">
+                                    <var name="x" x="80.0" y="10.0"/>
+                                    <value x="210.0" y="10.0">0.33</value>
+                                </operator>
+                            </cond>
+                            <block x="23.0" y="78.0">
+                                <setVar name="x" x="0.0" y="0.0">
+                                    <value x="140.0" y="10.0">1</value>
+                                </setVar>
+                                <return x="0.0" y="58.0">
+                                    <var name="x" x="60.0" y="10.0"/>
+                                </return>
+                            </block>
+                        </if>
+                        <if x="0.0" y="340.0">
+                            <cond>
+                                <operator op="&lt;" x="50.0" y="10.0">
+                                    <var name="x" x="80.0" y="10.0"/>
+                                    <value x="210.0" y="10.0">0.66</value>
+                                </operator>
+                            </cond>
+                            <block x="23.0" y="78.0">
+                                <setVar name="x" x="0.0" y="0.0">
+                                    <value x="140.0" y="10.0">2</value>
+                                </setVar>
+                                <return x="0.0" y="58.0">
+                                    <var name="x" x="60.0" y="10.0"/>
+                                </return>
+                            </block>
+                        </if>
+                        <setVar name="x" x="0.0" y="569.0">
+                            <value x="140.0" y="10.0">3</value>
+                        </setVar>
+                        <return x="0.0" y="627.0">
+                            <var name="x" x="60.0" y="10.0"/>
+                        </return>
+                    </block>
+                </function>
+                <function name="ChoseEvent" x="175.0" y="634.0">
+                    <params>
+                        <param name="cos" type="NUMBER"/>
+                    </params>
+                    <block x="20.0" y="40.0">
+                        <makeVar name="x" type="NUMBER" x="0.0" y="0.0"/>
+                        <setVar name="x" x="0.0" y="58.0">
+                            <random x="140.0" y="10.0"/>
+                        </setVar>
+                        <if x="0.0" y="111.0">
+                            <cond>
+                                <operator op="&lt;" x="50.0" y="10.0">
+                                    <var name="x" x="80.0" y="10.0"/>
+                                    <value x="210.0" y="10.0">0.3</value>
+                                </operator>
+                            </cond>
+                            <block x="23.0" y="78.0">
+                                <emit name="a" x="0.0" y="0.0">
+                                    <var member="cos" name="cos"/>
+                                </emit>
+                                <return x="0.0" y="88.0"/>
+                            </block>
+                        </if>
+                        <if x="0.0" y="370.0">
+                            <cond>
+                                <operator op="&lt;" x="50.0" y="10.0">
+                                    <var name="x" x="80.0" y="10.0"/>
+                                    <value x="210.0" y="10.0">0.6</value>
+                                </operator>
+                            </cond>
+                            <block x="23.0" y="78.0">
+                                <emit name="b" x="0.0" y="0.0">
+                                    <var member="cos" name="cos"/>
+                                </emit>
+                                <return x="0.0" y="88.0"/>
+                            </block>
+                        </if>
+                        <emit name="c" x="0.0" y="629.0">
+                            <var member="cos" name="cos"/>
+                        </emit>
+                    </block>
+                </function>
+            </functions>
+            <floatingBlocks/>
+            <costumes/>
+        </class>
+        <class name="view">
+            <events>
+                <inputEvent type="a"/>
+                <inputEvent type="b"/>
+                <inputEvent type="c"/>
+            </events>
+            <emits/>
+            <memberVariables/>
+            <handlers>
+                <handler event="c" name="" x="153.0" y="585.0">
+                    <block x="23.0" y="32.0">
+                        <makeVar name="x" type="NUMBER" x="0.0" y="0.0"/>
+                        <setVar name="x" x="0.0" y="58.0">
+                            <access name="cos" x="140.0" y="10.0"/>
+                        </setVar>
+                        <FunctionCall name="setCos" x="0.0" y="116.0">
+                            <params>
+                                <var name="x" x="100.0" y="10.0"/>
+                            </params>
+                            <returns/>
+                        </FunctionCall>
+                    </block>
+                </handler>
+                <handler event="b" name="" x="403.0" y="317.0">
+                    <block x="23.0" y="32.0">
+                        <makeVar name="x" type="NUMBER" x="0.0" y="0.0"/>
+                        <setVar name="x" x="0.0" y="58.0">
+                            <access name="cos" x="140.0" y="10.0"/>
+                        </setVar>
+                        <FunctionCall name="setCos" x="0.0" y="116.0">
+                            <params>
+                                <var name="x" x="100.0" y="10.0"/>
+                            </params>
+                            <returns/>
+                        </FunctionCall>
+                    </block>
+                </handler>
+                <handler event="a" name="" x="399.0" y="45.0">
+                    <block x="23.0" y="32.0">
+                        <makeVar name="x" type="NUMBER" x="0.0" y="0.0"/>
+                        <setVar name="x" x="0.0" y="58.0">
+                            <access name="cos" x="140.0" y="10.0"/>
+                        </setVar>
+                        <FunctionCall name="setCos" x="0.0" y="116.0">
+                            <params>
+                                <var name="x" x="100.0" y="10.0"/>
+                            </params>
+                            <returns/>
+                        </FunctionCall>
+                    </block>
+                </handler>
+            </handlers>
+            <functions>
+                <function name="setCos" x="769.0" y="404.0">
+                    <params>
+                        <param name="cos" type="NUMBER"/>
+                    </params>
+                    <block x="20.0" y="40.0">
+                        <appear x="0.0" y="0.0">
+                            <var name="cos" x="100.0" y="10.0"/>
+                        </appear>
+                        <print x="0.0" y="53.0">
+                            <var name="cos" x="50.0" y="10.0"/>
+                        </print>
+                    </block>
+                </function>
+            </functions>
+            <floatingBlocks/>
+            <costumes>
+                <costume name="1.0" path="1.0_view"/>
+                <costume name="2.0" path="2.0_view"/>
+                <costume name="3.0" path="3.0_view"/>
+            </costumes>
+        </class>
+    </classes>
+    <wireframe>
+        <instances>
+            <instance class="Chooser" name="choser" x="166.0" y="181.0"/>
+            <instance class="view" name="a" x="211.0" y="530.0"/>
+            <instance class="view" name="b" x="557.0" y="510.0"/>
+            <instance class="view" name="c" x="925.0" y="288.0"/>
+        </instances>
+        <wires>
+            <wire event="a" from="choser" to="a"/>
+            <wire event="b" from="choser" to="b"/>
+            <wire event="c" from="choser" to="c"/>
+        </wires>
+    </wireframe>
+</program>

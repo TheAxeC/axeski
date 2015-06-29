@@ -1,0 +1,753 @@
+\documentclass[]{article}
+
+\begin{document}
+\section{Bijlage XML Blokken}
+\label{bijlagexml}
+\subsection{Variables en Type}
+
+\subsubsection{Variabele blok}
+De \texttt{makeVar} blok heeft een bepaalde unieke naam.	
+Dit element bevat een type element.
+\lstset{language=XML}
+\begin{lstlisting}
+<makeVar name="name of variable" type="type" x="0" y="0" />
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ELEMENT makeVar (type)>
+<!ATTLIST makeVar name CDATA #REQUIRED type CDATA #REQUIRED x CDATA #IMPLIED y CDATA #IMPLIED >
+\end{lstlisting}
+
+\subsubsection{Value}
+De \texttt{value} blok bevat een string die de data voorstelt. 
+\lstset{language=XML}
+\begin{lstlisting}
+<value> value </value>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ATTLIST value x CDATA #IMPLIED y CDATA #IMPLIED>
+<!ELEMENT value (#PCDATA)>
+\end{lstlisting}
+
+\subsubsection{Set blok}
+De \texttt{setVar} blok bevat een variabele en een value die geassigned zal worden aan deze variabele.
+\lstset{language=XML}
+\begin{lstlisting}
+<setVar name="name">
+	<value> value </value>
+</setVar>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ATTLIST setVar name CDATA #IMPLIED x CDATA #IMPLIED y CDATA #IMPLIED>
+<!ELEMENT setVar (var|value|concat|length|charat|random|operator)>
+\end{lstlisting}
+\subsubsection{Print blok}
+De \texttt{print} blok bevat een block die uitgeprint zal worden naar de console.
+\lstset{language=XML}
+\begin{lstlisting}
+<print>
+	<value> value </value>
+</print>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ATTLIST print x CDATA #IMPLIED y CDATA #IMPLIED>
+<!ELEMENT print (var|value|concat|length|charat|random|operator)>
+\end{lstlisting}
+\subsubsection{var blok}
+De \texttt{var} blok heeft een naam waarmee een variable mee kan worden aangesproken of gemanipuleerd.
+\lstset{language=XML}
+\begin{lstlisting}
+<var name="varName"/>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ELEMENT var EMPTY>
+<!ATTLIST var name CDATA #REQUIRED>
+\end{lstlisting}
+
+\subsubsection{null blok}
+Wordt gebruikt om in bepaalde situaties "geen waarde" aan te duiden.
+\lstset{language=XML}
+\begin{lstlisting}
+<null/>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ELEMENT null EMPTY>
+\end{lstlisting}
+
+\subsection{Locks}
+\subsubsection{Lock}
+De \texttt{lock} blok bevat een variabele die gelocked moet worden.	
+\lstset{language=XML}
+\begin{lstlisting}
+<lock name="" />
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ATTLIST lock name CDATA #IMPLIED x CDATA #IMPLIED y CDATA #IMPLIED>
+\end{lstlisting}
+
+\subsubsection{Unlock}
+De \texttt{unlock} blok bevat een variabele die geunlocked moet worden.	
+\lstset{language=XML}
+\begin{lstlisting}
+<unlock name="name" />
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ATTLIST lock name CDATA #IMPLIED x CDATA #IMPLIED y CDATA #IMPLIED>
+\end{lstlisting}
+
+\subsection{Control Blokken}
+\subsubsection{Forever block}
+De \texttt{forever} block bevat een block code dat wordt uitgevoerd.
+\lstset{language=XML}
+\begin{lstlisting}
+<forever>
+  <block> code </block>
+</forever>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ATTLIST forever x CDATA #IMPLIED y CDATA #IMPLIED>
+<!ELEMENT forever (block)>
+\end{lstlisting}
+\subsubsection{If blok}
+De \texttt{if} blok bevat een conditie en een code blok.
+\lstset{language=XML}
+\begin{lstlisting}
+<if>
+  <cond> condition </cond>
+  <block> code </block>
+</if>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ATTLIST if x CDATA #IMPLIED y CDATA #IMPLIED>
+<!ELEMENT if (cond,block)>
+\end{lstlisting}
+\subsubsection{If-else blok}
+De \texttt{if-else} blok bevat een conditie en twee code blokken.
+\lstset{language=XML}
+\begin{lstlisting}
+<if-else>
+  <cond> condition </cond>
+  <block> if-code </block>
+  <block> else-code </block>
+</if-else>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ATTLIST if-else x CDATA #IMPLIED y CDATA #IMPLIED>
+<!ELEMENT if-else (cond,block,block)>
+\end{lstlisting}
+\subsubsection{Conditie blok}
+De \texttt{conditie} bevat een variable of een logische expressie.
+\lstset{language=XML}
+\begin{lstlisting}
+<cond>
+  <var name="varName"/>
+</cond>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ELEMENT  cond (var|value|concat|length|charat|random|operator)>
+\end{lstlisting}
+\subsubsection{While blok}
+De \texttt{while} bevat een conditie en een code blok.
+\lstset{language=XML}
+\begin{lstlisting}
+<while>
+  <cond> condition </cond>
+  <block> code </block>
+</while>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ATTLIST while x CDATA #IMPLIED y CDATA #IMPLIED>
+<!ELEMENT while (cond,code)>
+\end{lstlisting}
+
+\subsection{Physics}
+\subsubsection{Move blok}
+De \texttt{move} blok stelt een translatie voor.	
+\lstset{language=XML}
+\begin{lstlisting}
+<move x="0.0" y="0.0">
+    <x/>
+    <y/>
+</move>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ELEMENT move (x,y)>
+<!ATTLIST move x CDATA #IMPLIED y CDATA #IMPLIED>
+\end{lstlisting}
+
+\subsubsection{Show}
+De \texttt{show} blok maakt een instance zichtbaar of doet niets indien de instance al zichtbaar was.
+\lstset{language=XML}
+\begin{lstlisting}
+<show />
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ATTLIST show x CDATA #IMPLIED y CDATA #IMPLIED>
+<!ELEMENT show EMPTY>
+\end{lstlisting}
+
+\subsubsection{Hide}
+De \texttt{hide} blok maakt een instance onzichtbaar of doet niets indien de instance al onzichtbaar was.
+\lstset{language=XML}
+\begin{lstlisting}
+<hide />
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ATTLIST hide x CDATA #IMPLIED y CDATA #IMPLIED>
+<!ELEMENT hide EMPTY>
+\end{lstlisting}
+
+\subsubsection{Change appearance}
+De \texttt{changeAppearance} blok maakt het mogelijk voor een instance om zijn uiterlijk te veranderen. De id is de ID van zijn nieuw uiterlijk.
+\lstset{language=XML}
+\begin{lstlisting}
+<changeAppearance id="0"/>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ELEMENT appear EMPTY>
+<!ATTLIST hide x CDATA #IMPLIED y CDATA #IMPLIED>
+\end{lstlisting}
+
+\subsection{String operators}
+\subsubsection{Concat}
+De \texttt{concat} blok laat toe om 2 strings samen te voegen.
+\lstset{language=XML}
+\begin{lstlisting}
+<concat>
+	<null>
+	<var name="right var to concat">
+<concat>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ATTLIST concat x CDATA #IMPLIED y CDATA #IMPLIED>
+<!ELEMENT concat (var|value|concat|length|charat|random|null|operator, var|value|concat|length|charat|random|operator)>
+\end{lstlisting}
+
+\subsubsection{Length}
+De \texttt{strlen} blok laat toe om te lengte van een string op te vragen.
+\lstset{language=XML}
+\begin{lstlisting}
+<length>
+	<var name="string">
+</length>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ATTLIST length x CDATA #IMPLIED y CDATA #IMPLIED>
+<!ELEMENT length (var|value|concat|length|charat|random|operator)>
+\end{lstlisting}
+
+\subsubsection{CharAt}
+De \texttt{charAt} blok laat toe om character op een bepaalde index op te vragen.
+\lstset{language=XML}
+\begin{lstlisting}
+<charat>
+	<value> index </value>
+	<var name="string"/>
+<charat>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ATTLIST charat x CDATA #IMPLIED y CDATA #IMPLIED>
+<!ELEMENT charat (var|value|concat|length|charat|random|null|operator, var|value|concat|length|charat|random|operator)>
+\end{lstlisting}
+
+\subsection{Trivia}
+\subsubsection{Sleep blok}
+De \texttt{print} blok bevat een block die bepaald hoeveel milliseconden er geslapen moet worden.
+\lstset{language=XML}
+\begin{lstlisting}
+<sleep>
+	<value> value </value>
+</sleep>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ATTLIST sleep x CDATA #IMPLIED y CDATA #IMPLIED>
+<!ELEMENT sleep (var|value|concat|length|charat|random|operator)>
+\end{lstlisting}
+
+\subsection{Operators}
+\subsubsection{Random}
+De \texttt{random} blok stelt een functie voor die een random gekozen getal teruggeeft tussen de meegegeven bounds. 
+\lstset{language=XML}
+\begin{lstlisting}
+<random/>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ATTLIST random x CDATA #IMPLIED y CDATA #IMPLIED>
+<!ELEMENT random EMPTY>
+\end{lstlisting}\
+\subsubsection{Operator}
+De \texttt{operator} blok stelt een operator voor zoals +,-,/,*,$<$,$>$,... . Dit gebeurt met twee operatoren. Als de tweede kind-element \texttt{dummy} is, dan is de operator een unaire operator.
+\lstset{language=XML}
+\begin{lstlisting}
+<operator op="+">
+    <NULL/> 
+    <dummy/>
+</operator>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ELEMENT operator (NULL,|var|value|concat|length|charat|random|operator , NULL|dummy|var|value|concat|length|charat|random|operator)>
+<!ATTLIST operator op CDATA #REQUIRED x CDATA #IMPLIED y CDATA #IMPLIED>
+\end{lstlisting}
+
+\subsection{Functions en Handlers}
+\subsubsection{Handler}
+De \texttt{handler} blok stelt een speciale functie voor die een event opvangt. 
+\lstset{language=XML}
+\begin{lstlisting}
+<handler name="name" event="type of event">
+	<block>
+		code
+	</block>
+</handler>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ELEMENT handler (block)>
+<!ATTLIST handler name CDATA #required event CDATA #IMPLIED x CDATA #IMPLIED y CDATA #IMPLIED>
+\end{lstlisting}
+
+\subsubsection{Param}
+De \texttt{param} blok stelt een parameter voor van een functie, deze heeft een type en een identifier. 
+\lstset{language=XML}
+\begin{lstlisting}
+<param type="string" name="name1"/>
+
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ELEMENT param EMPTY>
+<!ATTLIST param type CDATA #REQUIRED name CDATA #REQUIRED>
+\end{lstlisting}
+
+\subsubsection{Return function}
+Het \texttt{return} element stelt een return voor van een functie, deze heeft een type. 
+\lstset{language=XML}
+\begin{lstlisting}
+<return type="string"/>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ELEMENT return EMPTY>
+<!ATTLIST return type CDATA #REQUIRED>
+\end{lstlisting}
+
+\subsubsection{Params}
+De \texttt{params} blok is een collectie voor alle parameters van een class.
+\lstset{language=XML}
+\begin{lstlisting}
+<params>
+	<param type="string" name="name1"/>
+</params>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ELEMENT params (param)*>
+\end{lstlisting}
+
+\subsubsection{Function}
+De \texttt{function} blok stelt een functie voor die opgeroepen kan worden in een ander stuk code van deze class. 
+\lstset{language=XML}
+\begin{lstlisting}
+<function name="name">
+    <return type="NULL"/>     
+     <params>
+	    <param type="string" name="name1"/>
+	    <param type="string" name="name2"/>
+    </params>
+	<block>
+		code
+	</block>
+</function>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ELEMENT function (param*, block)>
+<!ATTLIST function name CDATA #REQUIRED x CDATA #IMPLIED y CDATA #IMPLIED>
+\end{lstlisting}
+\subsubsection{Return Blok}
+Een \texttt{return} blok bevat variabelen die hij returned. Volgorde is hier van belang.
+\begin{lstlisting}
+\lstset{language=XML}
+<return>
+	<var name="varName" />
+</return>	
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ATTLIST return x CDATA #IMPLIED y CDATA #IMPLIED>
+<!ELEMENT return (var)*>
+\end{lstlisting}
+\subsubsection{FunctionCall blok}
+Een \texttt{FunctionCall} blok stelt een functie oproep voor en bevat variabelen voor de oproep.
+De laaste variable is de return waarde als de functie iets returned.
+\lstset{language=XML}
+\begin{lstlisting}
+<functionCall name="functioName">
+  <params>
+      <var name="varName1"/>
+      <var name="varName2"/>
+  </params>
+  <returns/>
+</functionCall>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ELEMENT functionCall (params, returns)>
+<!ATTLIST functionCall name CDATA #REQUIRED x CDATA #IMPLIED y CDATA #IMPLIED>
+
+
+<!ELEMENT returns (var)*>
+<!ELEMENT params (var)*>
+\end{lstlisting}
+
+\subsection{Block}
+De \texttt{block} blok stelt een groepering van code voor. 
+\lstset{language=XML}
+\begin{lstlisting}
+<block>
+	code
+</block>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ELEMENT block (makeVar|setVar|move|show|hide|appear|if|if-else|sleep|
+			while|forever|emit|functionCall|print|lock|unlock|return)*>
+<!ATTLIST block name CDATA #REQUIRED>
+\end{lstlisting}
+
+\subsection{Class}
+\subsubsection{InputEvent}
+De \texttt{inputEvent} blok is een binnenkomende event van een class.
+\lstset{language=XML}
+\begin{lstlisting}
+<inputEvent type="ev1"/>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ELEMENT inputEvent EMPTY>
+<!ATTLIST inputEvent type CDATA #REQUIRED>
+\end{lstlisting}
+
+\subsubsection{OutputEvent}
+De \texttt{outputEvent} blok is een uitgaande event van een class.
+\lstset{language=XML}
+\begin{lstlisting}
+<outputEvent type="ev2"/>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ELEMENT outputEvent EMPTY>
+<!ATTLIST outputEvent type CDATA #REQUIRED>
+\end{lstlisting}
+
+\subsubsection{Costume}
+De \texttt{costumes} blok is een collectie voor alle costumes.
+\lstset{language=XML}
+\begin{lstlisting}
+<costume name="s" path="path"/>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ELEMENT outputEvent EMPTY>
+<!ATTLIST outputEvent name CDATA #REQUIRED path CDATA #REQUIRED>
+\end{lstlisting}
+
+
+\subsubsection{Events}
+De \texttt{events} blok is een collectie voor alle input events van een class.
+\lstset{language=XML}
+\begin{lstlisting}
+<events>
+	<inputEvent type="ev1"/>
+</events>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ELEMENT events (inputEvent)*>
+\end{lstlisting}
+
+\subsubsection{Emits}
+De \texttt{emits} blok is een collectie voor alle emits die een class kan doen.
+\lstset{language=XML}
+\begin{lstlisting}
+<emits>
+	<outputEvent type="ev2"/>
+</emits>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ELEMENT emits (outputEvent)*>
+\end{lstlisting}
+
+\subsubsection{Handlers}
+De \texttt{handlers} blok is een collectie voor alle handlers van een class.
+\lstset{language=XML}
+\begin{lstlisting}
+<handlers>
+	<handler name="hand" event="ev1">
+		code
+	<\handler>
+</handlers>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ELEMENT handlers (handler)*>
+\end{lstlisting}
+
+\subsubsection{Functions}
+De \texttt{functions} blok is een collectie voor alle functions van een class.
+\lstset{language=XML}
+\begin{lstlisting}
+<functions>
+	<function name="func">
+		code
+	<\function>
+</functions>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ELEMENT functions (function)*>
+\end{lstlisting}
+
+\subsubsection{MemberVariables}
+De \texttt{memberVariables} blok is een collectie voor alle member variables van een class.
+\lstset{language=XML}
+\begin{lstlisting}
+<memberVariables>
+	<member type="number" name="var1" />
+</memberVariables>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ELEMENT memberVariables (member)*>
+\end{lstlisting}
+
+\subsubsection{Floating blocks}
+De \texttt{floatingBlocks} blok is een collectie voor alle losstaande blokken.
+\lstset{language=XML}
+\begin{lstlisting}
+<floatingBlocks>
+	<blocka />
+</floatingBlocks>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ELEMENT floatingBlocks (block)*>
+\end{lstlisting}
+
+\subsubsection{Costumes}
+De \texttt{costumes} blok is een collectie voor alle costumes.
+\lstset{language=XML}
+\begin{lstlisting}
+<costumes>
+	<costume name="s" path="path"/>
+</costumes>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ELEMENT costumes (costume)*>
+\end{lstlisting}
+
+\subsubsection{Class}
+De \texttt{class} blok stelt volledige class voor. Deze list al zijn input events, alle verschillende emits, alle member variabelen, alle handler functions, alle floating blocks en alle costumes en alle gewone functions.
+\lstset{language=XML}
+\begin{lstlisting}
+<class name="name">
+	<events>
+		<inputEvent type="ev1/">
+	</events>
+	<emits>
+		<outputEvent type="ev2"/>
+	</emits>
+	<handlers>
+		<handler name="hand" event="ev1">
+			code
+		<\handler>
+	</handlers>
+	<functions>
+		<function name="func">
+			code
+		<\function>
+	</functions>
+	<memberVariables>
+		<member type="number" name="var1" />
+	</memberVariables>
+	<costumes/>
+	<floatingBlocks>
+	    <block/>
+	</floatingBlocks>
+</class>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ELEMENT class (events, emits, handlers, functions, memberVariables, costumes, floatingBlocks)>
+<!ATTLIST class name CDATA #REQUIRED>
+\end{lstlisting}
+
+\subsection{Events en Emits}
+\subsubsection{Emit blok}
+Het \texttt{emit} block bevat de naam event en de members van van de message van dit event.
+De members zijn variabelen, ze hebben een extra attribuut. Namelijk om de members te matchen.
+\lstset{language=XML}
+\begin{lstlisting}
+<emit eventName="event">
+  <var member="a" name="var1">
+  <var member="b" name"var2">
+</emit>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ELEMENT emit (var)*>
+<!ATTLIST emit eventName CDATA #REQUIRED x CDATA #IMPLIED y CDATA #IMPLIED>
+\end{lstlisting}
+\subsubsection{Event blok}
+Een \texttt{event} blok voor het tonen en cree\"{e}ren van een event. Deze bevat een uniek type en members van een specifiek type met een unieke naam in het event.
+\lstset{language=XML}
+\begin{lstlisting}
+<event type="eventName">
+  <member type="memberType" name"memberName"/>
+  <member type="memberType2" name"memberName2"/>
+</event>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ELEMENT event (member)*>
+<!ATTLIST event type CDATA #REQUIRED>
+\end{lstlisting}
+\subsubsection{Member blok}
+De \texttt{member} blok kan een een event zitten. Dit is een variabele dat een type heeft en een naam.
+\lstset{language=XML}
+\begin{lstlisting}
+<member type="memberType" name="memberName"/>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ELEMENT member EMPTY>
+<!ATTLIST member type CDATA #REQUIRED name CDATA #REQUIRED>
+\end{lstlisting}
+\subsubsection{Access blok}
+De \texttt{access} blok bevat de naam van de member die men wilt aanspreken.
+Deze geeft deze variable zijn value terug.
+\lstset{language=XML}
+\begin{lstlisting}
+<access name="memberName"/>
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ELEMENT access EMPTY>
+<!ATTLIST access name CDATA #REQUIRED >
+\end{lstlisting}
+
+\subsection{Instances en Wires}
+\subsubsection{Instance }
+Dit stelt de XML voor een instance op te slaan voor. Een instance heeft een class waarbij het behoort een positie en een unieke naam.
+\lstset{language=XML}
+\begin{lstlisting}
+<instance name="instanceName" class="className" x="X" y="Y" />
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ELEMENT instance EMPTY>
+<!ATTLIST instance event CDATA #REQUIRED name CDATA #REQUIRED sprite			 CDATA #REQUIRED  x CDATA #REQUIRED y CDATA #REQUIRED>
+\end{lstlisting}
+\subsubsection{Wire}
+Een wire heeft twee instances en het event dat er tussen verstuurd wordt.
+\lstset{language=XML}
+\begin{lstlisting}
+<instance from="instanceName" to="instanceName2" event="eventName" />
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ELEMENT wire EMPTY>
+<!ATTLIST wire from CDATA #REQUIRED to CDATA #REQUIRED event CDATA #REQUIRED >
+\end{lstlisting}
+\subsubsection{WireFrame}
+Een wireFrame bevat instances en de wires tussen die instances.
+\begin{lstlisting}
+\lstset{language=XML}
+<wireFrame>
+     <instances>
+	    <instance name="instance1" class="className" x="1" y="1"/>
+	    <instance name="instance2" class="className2" x="1" y="1"/>
+	</instances>
+	<wires>
+	    <wire from="instance1" to="intance2" event="eventName"/>
+	</wires>
+</wireFrame>	
+\end{lstlisting}
+De DOCTYPE declaration: 
+\lstset{language=XML}
+\begin{lstlisting}
+<!ELEMENT wireFrame (instance|wire)*>
+\end{lstlisting}
+\end{document}

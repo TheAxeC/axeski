@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<program>
+    <events/>
+    <classes>
+        <class name="tt">
+            <events>
+                <inputEvent type="&lt;Start&gt;"/>
+            </events>
+            <emits/>
+            <memberVariables/>
+            <handlers>
+                <handler event="&lt;Start&gt;" name="" x="147.0" y="106.0">
+                    <block x="20.0" y="30.0">
+                        <makeVar name="x" type="NUMBER" x="0.0" y="0.0"/>
+                        <makeVar name="y" type="NUMBER" x="0.0" y="55.0"/>
+                        <setVar name="x" x="0.0" y="110.0">
+                            <value x="140.0" y="10.0">1</value>
+                        </setVar>
+                        <setVar name="y" x="0.0" y="165.0">
+                            <value x="140.0" y="10.0">1</value>
+                        </setVar>
+                        <print x="0.0" y="220.0">
+                            <operator op="*" x="50.0" y="10.0">
+                                <var name="x" x="80.0" y="10.0"/>
+                                <var name="y" x="240.0" y="10.0"/>
+                            </operator>
+                        </print>
+                    </block>
+                </handler>
+            </handlers>
+            <functions/>
+            <floatingBlocks/>
+            <costumes/>
+        </class>
+    </classes>
+    <wireframe>
+        <instances>
+            <instance class="tt" name="tt" x="335.0" y="176.0"/>
+        </instances>
+        <wires/>
+    </wireframe>
+</program>

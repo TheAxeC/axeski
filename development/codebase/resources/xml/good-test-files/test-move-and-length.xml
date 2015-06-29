@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<program>
+    <events/>
+    <classes>
+        <class name="tt">
+            <events>
+                <inputEvent type="&lt;mousePress&gt;"/>
+            </events>
+            <emits/>
+            <memberVariables/>
+            <handlers>
+                <handler event="&lt;mousePress&gt;" name="" x="208.0" y="150.0">
+                    <block x="20.0" y="30.0">
+                        <makeVar name="x" type="NUMBER" x="0.0" y="0.0"/>
+                        <setVar name="x" x="0.0" y="55.0">
+                            <length x="140.0" y="10.0">
+                                <value x="50.0" y="10.0">axel</value>
+                            </length>
+                        </setVar>
+                        <move x="0.0" y="130.0">
+                            <x>
+                                <var name="x" x="50.0" y="10.0"/>
+                            </x>
+                            <y>
+                                <value x="150.0" y="10.0">0</value>
+                            </y>
+                        </move>
+                        <print x="0.0" y="185.0">
+                            <var name="x" x="50.0" y="10.0"/>
+                        </print>
+                    </block>
+                </handler>
+            </handlers>
+            <functions/>
+            <floatingBlocks/>
+            <costumes/>
+        </class>
+    </classes>
+    <wireframe>
+        <instances>
+            <instance class="tt" name="tt" x="265.0" y="194.0"/>
+        </instances>
+        <wires/>
+    </wireframe>
+</program>

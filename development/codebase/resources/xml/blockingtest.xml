@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<program>
+    <events/>
+    <classes>
+        <class name="sdc">
+            <events>
+                <inputEvent type="&lt;Start&gt;"/>
+            </events>
+            <emits/>
+            <handlers>
+                <handler event="&lt;Start&gt;" name="" x="740.0" y="156.0">
+                    <block x="20.0" y="30.0">
+                        <print x="0.0" y="0.0">
+                            <value>test2</value>
+                        </print>
+                        <print x="0.0" y="55.0">
+                            <value>test2</value>
+                        </print>
+                        <print x="0.0" y="110.0">
+                            <value>test2</value>
+                        </print>
+                    </block>
+                </handler>
+                <handler event="&lt;Start&gt;" name="" x="484.0" y="306.0">
+                    <block x="20.0" y="30.0">
+                        <print x="0.0" y="0.0">
+                            <value>test</value>
+                        </print>
+                        <print x="0.0" y="55.0">
+                            <value>test</value>
+                        </print>
+                        <print x="0.0" y="110.0">
+                            <value>test</value>
+                        </print>
+                    </block>
+                </handler>
+                <handler event="&lt;Start&gt;" name="" x="197.0" y="249.0">
+                    <block x="20.0" y="30.0">
+                        <print x="0.0" y="0.0">
+                            <value>test3</value>
+                        </print>
+                        <print x="0.0" y="55.0">
+                            <value>test3</value>
+                        </print>
+                        <print x="0.0" y="110.0">
+                            <value>test3</value>
+                        </print>
+                    </block>
+                </handler>
+            </handlers>
+            <functions/>
+            <memberVariables/>
+        </class>
+        <class name="other">
+            <events>
+                <inputEvent type="&lt;Start&gt;"/>
+            </events>
+            <emits/>
+            <handlers>
+                <handler event="&lt;Start&gt;" name="" x="670.0" y="308.0">
+                    <block x="20.0" y="30.0">
+                        <print x="0.0" y="0.0">
+                            <value>test</value>
+                        </print>
+                    </block>
+                </handler>
+            </handlers>
+            <functions/>
+            <memberVariables/>
+        </class>
+    </classes>
+    <wireframe>
+        <instances>
+            <instance class="sdc" name="test" x="0.0" y="0.0"/>
+        </instances>
+        <wires/>
+    </wireframe>
+</program>

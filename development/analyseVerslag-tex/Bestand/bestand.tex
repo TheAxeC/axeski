@@ -1,0 +1,53 @@
+\documentclass[]{article}
+
+\begin{document}
+
+\section{Bestand}
+In deze sectie staat uitgelegd hoe externe files opgeslagen worden. In een eerste sectie staat hoe de IDE multilanguage gemaakt wordt en hoe de externe bestanden eruit zien. In de tweede sectie staat hoe projecten kunnen worden opgeslagen in een leesbaar formaat.
+\subsection{Multilanguage IDE}
+\label{Multilanguage}
+De visuele programmeer IDE moet multilanguage zijn. De gebruiker moet kunnen wisselen tussen verschillende talen. Aangezien we Java gebruiken zijn we gaan kijken naar standaard klassen om multilanguage applicaties te maken. De oplossing is de ResourceBundle Class die Java aanbiedt \cite{javabundle}.
+
+Een ResourceBundle laad automatisch de nodige file gegeven een bepaalde filenaam (en eventueel een locale). Vervolgens kan via een getString("label") de tekst in de gevraagde taal opgevraagd worden. Een locale beschrijft een bepaalde taal, zo kan er een UK engels, en een US engels gemaakt worden \cite{javalocale}. Hieronder staat beschreven hoe de files voor verschillende talen genoemd moeten worden. De inhoud van deze files volgt een simpel formaat nl, key = tekst \cite{jenkov}.\\
+Voorbeeldcode: \cite{jenkov}
+\lstset{language=Java}
+\begin{lstlisting}
+public class Main {
+	public static void main(String[] args) {
+		// De constructor heeft 2 parameters:
+		//	een taal en een land
+		Locale locale = new Locale("en", "UK"); 
+		// language.properties is een file
+		ResourceBundle language = ResourceBundle.getBundle("language", locale);
+		System.out.println(language.getString("label"));
+	}
+}
+\end{lstlisting}
+De verschillende files:
+\lstset{language=XML}
+\begin{lstlisting}
+language.properties
+language_en.properties
+\end{lstlisting}
+Een mogelijke inhoud van \texttt{language.properties}: 
+\lstset{language=XML}
+\begin{lstlisting}
+label1 = een bepaalde tekst
+label2 = een andere tekst
+\end{lstlisting}
+Een mogelijke inhoud van \texttt{language\_en.properties}: 
+\lstset{language=XML}
+\begin{lstlisting}
+label1 = a certain text
+label2 = another text
+\end{lstlisting}
+
+\subsection{XML Blokken}
+\label{XML}
+De blokken waarmee de gebruiker kan werken, wordt opgeslagen in verschillende XML files \cite{xmlresource}. De IDE zal bij het inlezen van opgeslagen projecten, of bij het opslaan van een project deze XML file structuur gebruiken. XML is een leesbaar formaat en kan gemakkelijk met de hand aangepast worden.
+
+De data die moet worden opgeslagen, wordt geschreven naar verschillende files. Alle instanties en de wires ertussen worden opgeslagen in een aparte file. Dit kan gezien worden als de main file. Events worden elk in een andere file opgeslagen. De Klassen worden ook elk in een andere file opgeslagen. Dit promoot herbruikbaarheid. De gebruiker van de IDE (en de IDE zelf) kan op deze manier gemakkelijk files importeren van een ander project. Elke Klasse heeft ook een lijst van nodige events zodat deze mee ge\"{i}mporteerd kunnen worden. De beschrijving van de XML voor alle ge\"{i}mplementeerde blokken en XML DTD is achteraan beschreven in bijlage \ref{bijlagexml}.
+
+
+
+\end{document}

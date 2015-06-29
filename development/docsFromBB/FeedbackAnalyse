@@ -1,0 +1,64 @@
+Groep 1 - Feedback Analyse
+This post is private. Added on March 6th 2015.
+
+Groep 1 - Visual Programming IDE
+Leden: Matthijs Kaminski & Axel Faes
+Opdrachtgever: Raf Van Ham
+Begeleider: Jonny Daenen
+
+verslag
+
++ verslag bouwt mooi op naar meer detail, goede indeling
++ noden opdrachtgever duidelijk
++ beschrijving andere software: goede analye + kernconcepten eruit gehaald
++ interpretatie afgecheckt met OG
++ prioriteiten duidelijk: eerst werkende core
++ extra's duidelijk omschreven
++ verwijzing naar externe bronnen
++ voorbeelduitwerking van core algoritme
++ gekeken naar ADTs met als doel lage tijdscomplexiteit
++ werking van de GUI goed omschreven
++ IDE vertaling al uitgezocht
++ link ADT en algos
+
++/- evaluatiecriteria is opsomming, beter indelen in categorieen
+
++/- Programmeertaal motivatie is ok, maar kan iets meer uitgewerkt
++/- algoritmes mogen wat meer uitgewerkt (vbn, pseudocode)
++/- impliciete uitleg ontwerpprincipes
+
+- professionele look, eenvoudig)
+
+- Geen (apart) totaal klassendiagram ingeleverd
+- Kort schematisch overzicht van de werking ontbreekt
+- taakverdeling is naar einde toe wat vaag, milestones zijn niet echt duidelijk
+- terugkoppeling naar/bijdrage aan evaluatiecriteria
+Technische details
+
+- onderscheid tussen intern en extern blok is niet duidelijk
+- verwijderen van objecten: hoe kan gebruiker dat doen?
+Presentatie
+
+nog niet duidelijk in begin ! draai wel/niet om, je legt focus op niet ! niet = extra? ! deelproblemen: geef aan op slide wat prioriteiten zijn ! mijlpalen zijn eindpunt, niet startpunt
+
++ nut van visuele programmeertaal duidelijk weergegeven
++ structuur presentatie is goed
++ mogelijkheden zijn duidelijk
++ goed uitgelegd voor dit publiek + opdrachtgever
++ perfect binnen de tijd
++ goed antwoord op vragen
+
++/- mockups duidelijk, maar mogelijk wat rommelig
+
+- deel nog niet in mockups voorzien (canvas, console)
+
+- laatste deel planning is vaag
+Algemene opmerkingen
+
+hoe werkt queue met timing? mogelijk een 'getimede' queue gebruiken.
+kan je met meerdere runs andere output krijgen? of is het volledig deterministisch? (denk hierbij ook aan sets e.d. die in Java niet gegarandeerd dezelfde volgorde teruggeven)
+design: zoek online naar een passend kleurenschema
+zorg dat snel duidelijk is hoe blokken getekend moeten worden
+Conclusie
+
+goed bezig, maar let op met bepaalde valkuilen; probeer die snel aan te pakken. Het is goed dat jullie snel een minimaal werkende applicatie klaar willen hebben.

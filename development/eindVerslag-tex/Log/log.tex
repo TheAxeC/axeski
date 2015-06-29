@@ -1,0 +1,86 @@
+\documentclass[]{article}
+
+\begin{document}
+
+\section{Bijlage Log}
+\subsection{Taakverdeling}
+Het aanmaken van de variabelen, excepties en uitvoeringsblokken zijn door beide teamleden ge\"implementeerd. De basis voor de modellen is gemaakt door Matthijs, terwijl Axel de virtual machine uitbouwde. Matthijs heeft de Proces klasse uitgewerkt. Axel heeft de Compiler en Runtime in elkaar gestoken. Axel heeft de DataLoader gemaakt terwijl Matthijs de DataSaver maakte. De modellen werden hierna verder uitgebreid door beide teamleden. Matthijs maakte de event creatie terwijl Axel het menu en de Data editor maakte. Beide teamleden hebben hierna gewerkt aan het implementeren van de drag-and-drop. Eenmaal de basis voor drag-and-drop gelegd was heeft Axel dit verder uitgewerkt terwijl Matthijs de class en instance creatie aanmaakte. \\\\
+Matthijs implementeerde de communicatie tussen modellen en de views zodanig dat Axel het debuggen kon uitwerken. Axel heeft verschillende bugs verwijderd en details afgewerkt, Matthijs werkte aan het view voor de member variabelen en de costumes. Matthijs implementeerde typechecking en de event-filter terwijl Axel verschillende nieuwe blokken implementeerde. Functies zijn gemaakt door beide teamleden. Uiteindelijk hebben beide teamleden de IDE nog getest en gedebugged.
+\subsection{Analyse}
+\begin{itemize}
+\item 7 januari 2015: Keuze top 3 onderwerpen en motivatie.
+\item 20 januari 2015: Voorbereiding mockups voor opdrachtgever.
+\item 26 januari 2015: Meeting met opdrachtgever.
+\item 27 januari 2015: Mockups en verslag van de eerste meeting met de opdrachtgever.
+\item 29 januari 2015: Afspraak met begeleider Jonny Deanen voor bespreking interpretatie.
+\item 4 februari 2015: Uitwerking voorstel voor opdrachtgever.
+\item 6 februari 2015: Afspraak met begeleider Jonny Daenen m.b.t uitwerking van voorstel.
+\item 8 februari 2015: Inzending voorstel voor de opdrachtgever.
+\item 12 februari 2015: Beschrijving van opslag formaat (XML) en mogelijke blokken.
+\item 14 februari 2015: Begin van beschrijving, interpretatie, multilanguage en begin evaluatiecriteria.
+\item 15 februari 2015: Bestaande software (Scratch, Blockly en Unreal). Begin beschrijving Event-driven programming en concurrent computing. Keuze programmeertaal en begin modules.
+\item 16 februari 2015: Bespreking werking klasse en UML.
+\item 17 februari 2015:  Toevoeging klassen: Class, Instance, Proces, EventDispatcher, VM, Event, EventPool, EventInstance, WiredInstance, WireFrame, ClassPool. En UML ervan.
+\item 18 februari 2015: Verder werken aan klassen van Blokken en bijhorende UML.
+\item 19 februari 2015: Beschrijving extra's en prioritaire functies. Uitleg gebruik van Lambda functies en bronnen. Toevoeging aan evaluatiecriteria.
+\item 20 februari 2015: Bespreking huidige status van verslag met begeleider Jonny Daenen.
+\item 22 februari 2015: Toevoeging voorbeeld proces. Herschrijving van diepgaande beschrijving met een nieuwe inleiding. Verplaatsen van secties naar bijlagen.
+\item 23 februari 2015: begin UML en beschrijving GUI models.
+\item 24 februari 2015: Mockups begonnnen en afwerking beschrijving GUI models.
+\item 25 februari 2015: Beschrijving en verdeling modules
+\item 26 februari 2015: Mockups en de beschrijving ervan. Herordening van modules. Toevoeging nieuwe inleiding. Gesprek van huidige toestand met begeleider Jonny Daenen.
+\item 27 februari 2015: Toevoeging uitleg design patroon compiler. Invullen van Log en taakverdeling.
+\end{itemize}
+\subsection{Implementatie}
+\begin{itemize}
+\item 30 maart 2015: Start implementatie, exceptions, variabelen en operators zijn aangemaakt
+\item 31 maart 2015: Aanmaak van basis blokken zoals class, instance, event, blocks en het aanmaken van een proces.
+			Aanmaak van enkele blokken zoals de acces blok, print blok. Aanmaak van de basis voor Models.
+			Creatie van de virtual machine en event dispatcher.
+\item 1  april 2015: Uitbreiding modellen, aanmaak compiler en runtime. 
+\item 2 april 2015: Aanmaken van verschillende modellen. Uitbreiding van de compiler. Aanmaak van functie modellen.
+\item 5 april 2015: Compile functies toegevoegd, accesmodel en refEventmodel.
+\item 6 april 2015: DataSaver interface en DataLoader interface.
+\item 7 april 2015: DataSaver en DataLoader implementatie. Functiecall model, emitblock en Instancemodel. Aanmaak Language module.
+\item 8 april 2015: Wireframe model, operatormodel. DataSaver opslaan naar zowel file als string. 
+\item 8 april 2015: Backend is vervolledigd en getest.
+\item 11 april 2015: Creatie menu bar, modellen, Data editor en start main GUI frame.
+\item 12-13 april 2015: Start aan eventcreatie, aanmaken aparte thread voor de console. Aanmaken tabbladen systeem
+\item 14 april 2015: MVC event en variable.
+\item 14 april 2015: Afspraak met begeleider.
+\item 15 april 2015: Afspraak begeleider voor probleem met output naar console.
+\item 16 april 2015: Afmaken data edtior en main frame, werk aan event view. Eerste prototype drag-and-drop. Inladen event van file.
+\item 17-18-21-22 april 2015: Drag-and-drop
+\item 21 april 2015: Start class view
+\item 22 april 2015: Block views
+\item 23 april 2015: Block view work and class creation. Handler view implementatie start. SelectBlocksPanel en representative view is gemaakt. Toevoegen blokken aan panel.
+\item 23 april 2015: Afspraak met begeleider.
+\item 25 april 2015: Wireframe, input events van classes en prototype van wires. 
+\item 26 april 2015: Refactoring Drag-and-drop.
+\item 27 april 2015: Wires tekenen is ge\"implementeerd.
+\item 28 april 2015: Color scheme gekozen voor de blokken, verdere implementatie handler view. Werk aan de layouting van de IDE. Connecties gemaakt tussen models en views. GUI navigatie (tabs en welcome scherm). Testing van volledige pipeline van de IDE. Aanmaken if en while blokken voor de volledige IDE. 
+\item  29 april 2015: Correcte implementatie Drag-and-drop. Switch button voor input events, instanceview layouting. Algemeen werk aan views. 
+\item 30 april 2015: Aanmaken van Jar voor prototype
+\item 1 mei 2015: Demonstratie project.
+\item 6 mei 2015: Aanmaak variabele en referenties. Communicatie emit view en emit model. Globaal werk aan views en modellen. 
+\item 7 mei 2015: Verbetering van file menu. Setblock en inladen variable blocks. 
+\item 8 mei 2015: Toevoeging oneindig veld voor IDE. Correct inladen van wires. Start aan rechterpaneel klassen.
+\item 9-10 mei 2015: Debugging en Breakpoints toevoegen. Member variabelen maken.
+\item 11 mei 2015: Image selector. Costume view, verwijderen wires in wire-frame. Verwijderen van warnings zodat project warning-free is.
+\item 12 mei 2015: Delete input events in wireframe en aanmaken canvas en input events. Opslaan images.
+\item 12 mei 2015: Afspraak met begeleider.
+\item 14-15 mei 2015: Opslaan costumes in xml, globaal werk costume view. Change Appearance blok. Implementatie van locksen unlocks. String operators, sleep, show, hide forever en move blokken zijn ge\"implementeerd. 
+\item 15 mei 2015: Hotkeys implementeren, if-else model.
+\item  16 mei 2015: Schrijven van enkele missende comments. Fixen bugs in verschillende views.
+\item 17 mei 2015: Event-filter gemaakt.
+\item 18 mei 2015: Bug fixes
+\item 19 mei 2015: Typechecking, emit en acces views.
+\item 22-24 mei 2015: Unaire blok, crash fixes, welcome screen glitch, emit en if-loading. Blocks kunnen in een if snappen. Typechecking condities.
+\item 25 mei 2015: Functie en functiecall implementatie. Layouting van de GUI.
+\item 26 mei 2015: Afspraak met begeleider.
+\item 26 mei 2015: Kleurenschema, emit typechecking, bug fixes. Verwijderen debug statements.
+\item 1 juni 2015: Afspraak met begeleider.
+\item 27 mei - 4 juni 2015: Verslag
+
+\end{itemize} 
+\end{document}

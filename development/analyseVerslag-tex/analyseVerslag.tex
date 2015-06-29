@@ -1,0 +1,92 @@
+\documentclass[]{article}
+
+% including of all required packages
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{standalone}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{amsmath}
+
+\usepackage[dutch]{babel}
+
+\newsavebox\CBox
+\def\textBF#1{\sbox\CBox{#1}\resizebox{\wd\CBox}{\ht\CBox}{\textbf{#1}}}
+
+\usepackage{rotating}
+\usepackage{titlesec}
+\usepackage{float}
+
+\usepackage{cite}
+\usepackage{url}
+
+% table of contents depth
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+
+% french spacing
+\frenchspacing
+
+% Draw line for the title page
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+% Defines for the XML highlighting
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.6}
+\definecolor{cyan}{rgb}{0.0,0.6,0.6}
+\definecolor{pblue}{rgb}{0.13,0.13,1}
+\definecolor{pgreen}{rgb}{0,0.5,0}
+\definecolor{pred}{rgb}{0.9,0,0}
+\definecolor{pgrey}{rgb}{0.46,0.45,0.48}
+
+\lstset{
+  basicstyle=\ttfamily,
+  columns=fullflexible,
+  showstringspaces=false,
+  commentstyle=\color{gray}\upshape
+}
+
+\lstdefinelanguage{XML}
+{
+  morestring=[b]",
+  morestring=[s]{>}{<},
+  morecomment=[s]{<?}{?>},
+  stringstyle=\color{black},
+  identifierstyle=\color{darkblue},
+  keywordstyle=\color{cyan},
+  morekeywords={xmlns,version,type}% list your attributes here
+}
+
+\lstset{language=Java,
+  showspaces=false,
+  showtabs=false,
+  breaklines=true,
+  showstringspaces=false,
+  breakatwhitespace=true,
+  commentstyle=\color{pgreen},
+  keywordstyle=\color{pblue},
+  stringstyle=\color{pred},
+  basicstyle=\ttfamily,
+  moredelim=[il][\textcolor{pgrey}]{$$},
+  moredelim=[is][\textcolor{pgrey}]{\%\%}{\%\%}
+}
+
+\begin{document}
+
+\input{./TitlePage/titlepage.tex}
+\tableofcontents
+\newpage
+\input{./BestaandeSoftware/bestaandesoftware.tex}
+\input{./Beschrijving/beschrijving.tex}
+\input{./EvaluatieCriteria/evaluatiecriteria.tex}
+\input{./AnalyseADTAlgorithm/analyseatdalgorithm.tex}
+\input{./AnalyseClassenDiagram/analyseclassendiagram.tex}
+\input{./Bestand/bestand.tex}
+\input{./Mockups/mockups.tex}
+\input{./Taakverdeling/taakverdeling.tex}
+\input{./Bibliografie/bibliografie.tex}
+\input{./Log/log.tex}
+\appendix
+\input{./Bijlage/bijlage.tex}
+
+\end{document}

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<program>
+    <events>
+        <event type="A"/>
+        <event type="B">
+            <member name="cool" type="NUMBER"/>
+        </event>
+    </events>
+    <classes>
+        <class name="Matthijs">
+            <events>
+                <inputEvent type="&lt;Start&gt;"/>
+                <inputEvent type="A"/>
+            </events>
+            <emits/>
+            <handlers>
+                <handler event="&lt;Start&gt;" name="handller">
+                    <block>
+                        <print>
+                            <value>From class Matthijs</value>
+                        </print>
+                        <emit name="A"/>
+                    </block>
+                </handler>
+            </handlers>
+            <functions/>
+            <memberVariables/>
+        </class>
+        <class name="Axel">
+            <events>
+                <inputEvent type="&lt;Start&gt;"/>
+                <inputEvent type="A"/>
+                <inputEvent type="B"/>
+                <inputEvent type="B"/>
+            </events>
+            <emits/>
+            <handlers>
+                <handler event="B" name="handler">
+                    <block>
+                        <print>
+                            <value>From Axel</value>
+                        </print>
+                        <print>
+                            <access name="cool"/>
+                        </print>
+                    </block>
+                </handler>
+                <handler event="&lt;Start&gt;" name="handller">
+                    <block/>
+                </handler>
+                <handler event="A" name="handller">
+                    <block>
+                        <makeVar name="a" type="NUMBER"/>
+                        <setVar name="a">
+                            <value>5</value>
+                        </setVar>
+                        <print>
+                            <value>From class Axel</value>
+                        </print>
+                        <emit name="B">
+                            <var name="cool"/>
+                        </emit>
+                    </block>
+                </handler>
+            </handlers>
+            <functions/>
+            <memberVariables/>
+        </class>
+        <class name="Extra">
+            <events>
+                <inputEvent type="&lt;Start&gt;"/>
+                <inputEvent type="B"/>
+            </events>
+            <emits/>
+            <handlers>
+                <handler event="B" name="handler">
+                    <block>
+                        <print>
+                            <value>From Extra</value>
+                        </print>
+                        <print>
+                            <access name="cool"/>
+                        </print>
+                    </block>
+                </handler>
+                <handler event="&lt;Start&gt;" name="handller">
+                    <block/>
+                </handler>
+            </handlers>
+            <functions/>
+            <memberVariables/>
+        </class>
+    </classes>
+    <wireframe>
+        <instances>
+            <instance class="Axel" name="a" x="0.0" y="0.0"/>
+            <instance class="Matthijs" name="m" x="0.0" y="0.0"/>
+            <instance class="Extra" name="e" x="0.0" y="0.0"/>
+        </instances>
+        <wires>
+            <wire event="A" from="m" to="a"/>
+            <wire event="B" from="a" to="a"/>
+            <wire event="B" from="a" to="e"/>
+        </wires>
+    </wireframe>
+</program>

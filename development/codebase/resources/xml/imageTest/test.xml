@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<program>
+    <events/>
+    <classes>
+        <class name="rrr">
+            <events/>
+            <emits/>
+            <memberVariables/>
+            <handlers/>
+            <functions/>
+            <floatingBlocks/>
+            <costumes>
+                <costume name="img" path="img_rrr"/>
+            </costumes>
+        </class>
+    </classes>
+    <wireframe>
+        <instances/>
+        <wires/>
+    </wireframe>
+</program>

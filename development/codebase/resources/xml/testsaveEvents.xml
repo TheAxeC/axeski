@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<program>
+    <events>
+        <event type="test"/>
+        <event type="&lt;Start&gt;"/>
+    </events>
+    <classes>
+        <class name="test">
+            <events>
+                <inputEvent type="&lt;Start&gt;"/>
+                <inputEvent type="test"/>
+            </events>
+            <emits>
+                <outputEvent type="&lt;Start&gt;"/>
+                <outputEvent type="test"/>
+            </emits>
+            <handlers/>
+            <functions/>
+            <memberVariables/>
+        </class>
+    </classes>
+    <wireframe>
+        <instances/>
+        <wires/>
+    </wireframe>
+</program>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<program>
+    <events/>
+    <classes>
+        <class name="rrr">
+            <events>
+                <inputEvent type="&lt;Start&gt;"/>
+            </events>
+            <emits/>
+            <memberVariables/>
+            <handlers>
+                <handler event="&lt;Start&gt;" name="" x="274.0" y="151.0">
+                    <block x="20.0" y="30.0">
+                        <print x="0.0" y="0.0">
+                            <concat x="50.0" y="10.0">
+                                <value x="50.0" y="10.0">one</value>
+                                <concat x="180.0" y="10.0">
+                                    <value x="50.0" y="10.0">two</value>
+                                    <value x="180.0" y="10.0">three</value>
+                                </concat>
+                            </concat>
+                        </print>
+                    </block>
+                </handler>
+            </handlers>
+            <functions/>
+            <floatingBlocks/>
+            <costumes/>
+        </class>
+    </classes>
+    <wireframe>
+        <instances>
+            <instance class="rrr" name="fff" x="268.0" y="168.0"/>
+        </instances>
+        <wires/>
+    </wireframe>
+</program>

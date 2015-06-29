@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<program>
+    <events>
+        <event type="switchLight"/>
+    </events>
+    <classes>
+        <class name="lightSwitcher">
+            <events>
+                <inputEvent type="&lt;Start&gt;"/>
+                <inputEvent type="switchLight"/>
+            </events>
+            <emits/>
+            <memberVariables>
+                <member name="lightOn" type="BOOLEAN"/>
+            </memberVariables>
+            <handlers>
+                <handler event="switchLight" name="switchLight" x="394.0" y="40.0">
+                    <block x="23.0" y="32.0">
+                        <if x="0.0" y="0.0">
+                            <cond>
+                                <var name="lightOn"/>
+                            </cond>
+                            <block x="23.0" y="53.0">
+                                <appear x="0.0" y="0.0">
+                                    <value x="100.0" y="10.0">lightOn</value>
+                                </appear>
+                            </block>
+                        </if>
+                        <if x="0.0" y="148.0">
+                            <cond>
+                                <operator op="!" x="50.0" y="10.0">
+                                    <var name="lightOn"/>
+                                    <dummy/>
+                                </operator>
+                            </cond>
+                            <block x="23.0" y="73.0">
+                                <appear x="0.0" y="0.0">
+                                    <value x="100.0" y="10.0">lightOff</value>
+                                </appear>
+                            </block>
+                        </if>
+                        <setVar name="lightOn" x="0.0" y="316.0">
+                            <operator op="!" x="140.0" y="10.0">
+                                <var name="lightOn"/>
+                                <dummy/>
+                            </operator>
+                        </setVar>
+                    </block>
+                </handler>
+                <handler event="&lt;Start&gt;" name="constructor" x="48.0" y="336.0">
+                    <block x="23.0" y="32.0">
+                        <setVar name="lightOn" x="0.0" y="0.0">
+                            <value x="140.0" y="10.0">false</value>
+                        </setVar>
+                    </block>
+                </handler>
+            </handlers>
+            <functions/>
+            <floatingBlocks/>
+            <costumes>
+                <costume name="lightOff" path="lightOff_lightSwitcher"/>
+                <costume name="lightOn" path="lightOn_lightSwitcher"/>
+            </costumes>
+        </class>
+        <class name="Controller">
+            <events>
+                <inputEvent type="&lt;mousePress&gt;"/>
+            </events>
+            <emits>
+                <outputEvent type="switchLight"/>
+            </emits>
+            <memberVariables/>
+            <handlers>
+                <handler event="&lt;mousePress&gt;" name="controller" x="326.0" y="170.0">
+                    <block x="23.0" y="32.0">
+                        <emit name="switchLight" x="0.0" y="0.0"/>
+                    </block>
+                </handler>
+            </handlers>
+            <functions/>
+            <floatingBlocks/>
+            <costumes/>
+        </class>
+    </classes>
+    <wireframe>
+        <instances>
+            <instance class="lightSwitcher" name="Light1" x="182.0" y="104.0"/>
+            <instance class="lightSwitcher" name="Light2" x="447.0" y="101.0"/>
+            <instance class="lightSwitcher" name="Light3" x="705.0" y="101.0"/>
+            <instance class="Controller" name="Switch" x="193.0" y="372.0"/>
+        </instances>
+        <wires>
+            <wire event="switchLight" from="Switch" to="Light1"/>
+            <wire event="switchLight" from="Switch" to="Light2"/>
+            <wire event="switchLight" from="Switch" to="Light3"/>
+        </wires>
+    </wireframe>
+</program>

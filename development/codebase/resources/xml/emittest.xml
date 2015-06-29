@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<program>
+    <events>
+        <event type="A"/>
+        <event type="B">
+            <member name="cool" type="NUMBER"/>
+        </event>
+    </events>
+    <classes>
+        <class name="Matthijs">
+            <events>
+                <inputEvent type="&lt;Start&gt;"/>
+            </events>
+            <emits>
+                <outputEvent type="A"/>
+            </emits>
+            <memberVariables/>
+            <handlers>
+                <handler event="&lt;Start&gt;" name="handller" x="406.0" y="239.0">
+                    <block x="20.0" y="30.0">
+                        <print x="0.0" y="0.0">
+                            <value x="50.0" y="10.0">From class Matthijs</value>
+                        </print>
+                        <emit name="A" x="0.0" y="55.0"/>
+                    </block>
+                </handler>
+            </handlers>
+            <functions/>
+            <floatingBlocks/>
+            <costumes/>
+        </class>
+        <class name="Axel">
+            <events>
+                <inputEvent type="&lt;Start&gt;"/>
+                <inputEvent type="A"/>
+                <inputEvent type="B"/>
+            </events>
+            <emits>
+                <outputEvent type="B"/>
+            </emits>
+            <memberVariables/>
+            <handlers>
+                <handler event="A" name="handller" x="0.0" y="0.0">
+                    <block x="20.0" y="30.0">
+                        <makeVar name="a" type="NUMBER" x="0.0" y="0.0"/>
+                        <setVar name="a" x="0.0" y="55.0">
+                            <value x="140.0" y="10.0">5</value>
+                        </setVar>
+                        <print x="0.0" y="110.0">
+                            <value x="50.0" y="10.0">From class Axel</value>
+                        </print>
+                        <emit name="B" x="0.0" y="165.0"/>
+                    </block>
+                </handler>
+                <handler event="B" name="handler" x="0.0" y="0.0">
+                    <block x="20.0" y="30.0">
+                        <print x="0.0" y="0.0">
+                            <value x="50.0" y="10.0">From Axel</value>
+                        </print>
+                        <print x="0.0" y="55.0">
+                            <access name="cool" x="50.0" y="10.0"/>
+                        </print>
+                    </block>
+                </handler>
+                <handler event="&lt;Start&gt;" name="handller" x="0.0" y="0.0">
+                    <block x="20.0" y="30.0"/>
+                </handler>
+            </handlers>
+            <functions/>
+            <floatingBlocks/>
+            <costumes/>
+        </class>
+        <class name="Extra">
+            <events>
+                <inputEvent type="&lt;Start&gt;"/>
+                <inputEvent type="B"/>
+            </events>
+            <emits/>
+            <memberVariables/>
+            <handlers>
+                <handler event="B" name="handler" x="0.0" y="0.0">
+                    <block x="20.0" y="30.0">
+                        <print x="0.0" y="0.0">
+                            <value x="50.0" y="10.0">From Extra</value>
+                        </print>
+                        <print x="0.0" y="55.0">
+                            <access name="cool" x="50.0" y="10.0"/>
+                        </print>
+                    </block>
+                </handler>
+                <handler event="&lt;Start&gt;" name="handller" x="0.0" y="0.0">
+                    <block x="20.0" y="30.0"/>
+                </handler>
+            </handlers>
+            <functions/>
+            <floatingBlocks/>
+            <costumes/>
+        </class>
+    </classes>
+    <wireframe>
+        <instances>
+            <instance class="Axel" name="a" x="0.0" y="0.0"/>
+            <instance class="Matthijs" name="m" x="0.0" y="0.0"/>
+            <instance class="Extra" name="e" x="0.0" y="0.0"/>
+        </instances>
+        <wires/>
+    </wireframe>
+</program>

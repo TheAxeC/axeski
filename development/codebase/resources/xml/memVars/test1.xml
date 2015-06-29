@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<program>
+    <events/>
+    <classes>
+        <class name="tt">
+            <events/>
+            <emits/>
+            <handlers/>
+            <functions/>
+            <memberVariables>
+                <member name="tt" type="STRING"/>
+                <member name="test" type="NUMBER"/>
+            </memberVariables>
+        </class>
+    </classes>
+    <wireframe>
+        <instances/>
+        <wires/>
+    </wireframe>
+</program>

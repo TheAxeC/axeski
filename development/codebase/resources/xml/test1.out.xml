@@ -1,0 +1,40 @@
+
+<program>
+	<events>
+		<event type="A"></event>
+	</events>
+	<classes>
+		<class name="Jos">
+			<events>
+				<inputEvent type="&lt;Start&gt;"></inputEvent>
+				<inputEvent type="A"></inputEvent>
+			</events>
+			<emits>
+				<outputEvent type="A"></outputEvent>
+			</emits>
+			<handlers>
+				<handler name="handller" event="&lt;Start&gt;">
+					
+					<block>
+					<print>
+						<value>PRINT SOMETHING</value>
+					</print>
+					</block>
+				</handler>
+				<handler name="handller" event="A">
+					
+					<block><print>
+						<value>OK</value></print><emit name="A"/></block>
+				</handler>
+						
+						
+		</handlers>
+			</class></classes>
+	<wireframe>
+		<instances>
+			<instance x="0" y="0" class="Jos" name="a"></instance></instances>
+		<wires>
+			<wire event="A" from="a" to="a"/>
+		</wires>
+		</wireframe>
+	</program>

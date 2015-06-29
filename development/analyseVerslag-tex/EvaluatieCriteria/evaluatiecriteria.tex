@@ -1,0 +1,31 @@
+\documentclass[]{article}
+
+\begin{document}
+
+\section{Evaluatiecriteria}
+\label{EvaluatieCriteria}
+Er zijn verschillende criteria die we stellen aan onze software. Sommige van deze criteria is subjectief en niet getoond in onderstaande bulletpoints. Onder de subjectieve criteria verstaan we oa. de professionele look van de IDE. 
+
+\begin{itemize}
+\item Multilanguage user interface (ondersteunde talen zijn engels en nederlands).
+\item Geen crash bij inladen van foute XML data.
+\item Verkeerde invoer onmogelijk maken bij het wireFrame (enkel events van hetzelfde type kunnen verbonden worden, en input kan enkel met output punten verbonden worden)
+\item Het verzenden van events wordt gelijktijdig opgevangen door de geabonneerde instanties. De uitvoering van de code gebeurt hierna ook op een concurrent manier.
+\item Mogelijkheid om projecten op te slaan.
+\item IDE blijft niet vasthangen bij een infinite loop.
+\item IDE geeft geen beperking op het aantal processes die tegelijkertijd kunnen runnen.
+\item IDE geeft geen beperking op het aantal Klassen die tegelijkertijd kunnen bestaan.
+\item IDE geeft geen beperking op het aantal Events die tegelijkertijd kunnen bestaan.
+\item IDE geeft geen beperking op het aantal functions die tegelijkertijd kunnen bestaan.
+\item Recursieve aanroepen zijn mogelijk.
+\item Parameter passing is ge\"{i}mplementeerd.
+\item Bij type-error op runtime breekt enkel dat proces af.
+\item Bij variable-not-found error op runtime breekt enkel dat proces af.
+\item Deadlocks zijn niet mogelijk d.m.v. de locks die de gebruiker kan gebruiker.
+\item Er is geen probleem met racing conditions m.b.t. processen die dezelfde variabelen willen gebruiken indien de gebruiker locks gebruiker.
+\item Processen worden in dezelfde orde toegevoegd als ze worden toegevoegd.
+\item Geen globale variabelen.
+\item Een lock kan niet gezet worden indien een ander proces al een lock gezet heeft op dezelfde instantie.
+
+\end{itemize}
+\end{document}
