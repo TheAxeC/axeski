@@ -26,7 +26,7 @@ Rephrased, a class is a collection of functions and handlers that react to input
 
 ![picture alt](https://raw.githubusercontent.com/TheAxeC/AxeSki/master/screenshots/Screen%20Shot%202015-06-04%20at%2020.12.42.png)
 
-![picture alt](http://axel.thefaceless.be/wp-content/uploads/2015/05/psopv_2014-2015_screenshot_4-1024x640.png)
+![picture alt](https://raw.githubusercontent.com/TheAxeC/AxeSki/master/screenshots/Screen%20Shot%202015-06-04%20at%2020.12.36.png)
 
 ##Instances:
 
