@@ -24,7 +24,7 @@ A  class can have costumes, these are visual representations of a class. An ins
 
 Rephrased, a class is a collection of functions and handlers that react to input events, which can have visual representations.
 
-![picture alt](http://axel.thefaceless.be/wp-content/uploads/2015/05/psopv_2014-2015_screenshot_3-1024x640.png)
+![picture alt](https://raw.githubusercontent.com/TheAxeC/AxeSki/master/screenshots/Screen%20Shot%202015-06-04%20at%2020.12.42.png)
 
 ![picture alt](http://axel.thefaceless.be/wp-content/uploads/2015/05/psopv_2014-2015_screenshot_4-1024x640.png)
 
@@ -34,9 +34,9 @@ An instance is an instantiation of a certain class. In the WireFrame view, it sh
 
 In the Canvas view, the user can see the visual representation (costume) of the instance. When the program is running, the user can use this view to emit key-press events, or mouse-click/release events.
 
-![picture alt](http://axel.thefaceless.be/wp-content/uploads/2015/05/psopv_2014-2015_screenshot_7-1024x640.png)
+![picture alt](https://raw.githubusercontent.com/TheAxeC/AxeSki/master/screenshots/Screen%20Shot%202015-06-04%20at%2020.12.15.png)
 
-![picture alt](http://axel.thefaceless.be/wp-content/uploads/2015/05/psopv_2014-2015_screenshot_6-1024x640.png)
+![picture alt](https://raw.githubusercontent.com/TheAxeC/AxeSki/master/screenshots/Screen%20Shot%202015-06-04%20at%2020.04.22.png)
 
 ##Debugging:
 
@@ -46,6 +46,6 @@ The user has the ability to step through his code. In the class view, it will hi
 
 If the user wants to, he can enable the data editor. The data editor will show the XML file that represents the program he is building. If this XML is edited, it will make changes to the visual views.
 
-![picture alt](http://axel.thefaceless.be/wp-content/uploads/2015/05/psopv_2014-2015_screenshot_9-1024x640.png)
+![picture alt](https://raw.githubusercontent.com/TheAxeC/AxeSki/master/screenshots/Screen%20Shot%202015-06-04%20at%2020.13.23.png)
 
 The Virtual machine is completely separate from the actual  IDE. To implement another VM, a developer needs to supple a different compiler to "compile" the blocks from the visual representation to the format that is preferred.
