@@ -10,7 +10,7 @@ The user can create new events. The events are signals that the user will send b
 
 The system itself also has some default events. These are dedicated events for key presses, mouse clicks (and release) and the start event to signify a program has started running.
 
-![picture alt](http://axel.thefaceless.be/wp-content/uploads/2015/05/psopv_2014-2015_screenshot_2-1024x640.png "Event Creation")
+![picture alt](https://raw.githubusercontent.com/TheAxeC/AxeSki/master/screenshots/Screen%20Shot%202015-06-04%20at%2020.00.41.png "Event Creation")
 
 ##Classes:
 
