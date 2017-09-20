@@ -4,7 +4,7 @@ For my studies at the University I'm worked on a Visual programming IDE with an
 
 The purpose of the IDE is to create "black boxes" which can send events (signals packed with data) to eachother. We take the idea of using drag-able blocks in a visual IDE and expand on it.
 
-##Events:
+## Events:
 
 The user can create new events. The events are signals that the user will send between different instances (see below). An event is identified by a unique name, it can also contain data (in the form of numbers, strings and booleans).
 
@@ -12,7 +12,7 @@ The system itself also has some default events. These are dedicated events for k
 
 ![picture alt](https://raw.githubusercontent.com/TheAxeC/AxeSki/master/screenshots/Screen%20Shot%202015-06-04%20at%2020.00.41.png "Event Creation")
 
-##Classes:
+## Classes:
 
 The user can create classes. A class is identified by a unique name. A class has a number of input events to which it can react. These input events are composed of user-created events and default (system) events.
 
@@ -28,7 +28,7 @@ Rephrased, a class is a collection of functions and handlers that react to input
 
 ![picture alt](https://raw.githubusercontent.com/TheAxeC/AxeSki/master/screenshots/Screen%20Shot%202015-06-04%20at%2020.12.36.png)
 
-##Instances:
+## Instances:
 
 An instance is an instantiation of a certain class. In the WireFrame view, it shows the input and output events from his class. These events can be connected to events from another instance to "emit" the event.
 
@@ -38,11 +38,11 @@ In the Canvas view, the user can see the visual representation (costume) of the 
 
 ![picture alt](https://raw.githubusercontent.com/TheAxeC/AxeSki/master/screenshots/Screen%20Shot%202015-06-04%20at%2020.04.22.png)
 
-##Debugging:
+## Debugging:
 
 The user has the ability to step through his code. In the class view, it will highlight the current executing block.
 
-##Data editor:
+## Data editor:
 
 If the user wants to, he can enable the data editor. The data editor will show the XML file that represents the program he is building. If this XML is edited, it will make changes to the visual views.
 
